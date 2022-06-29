@@ -5,6 +5,11 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-family: "Purista", sans-serif;
 }
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 
 /*valen*/
@@ -98,17 +103,179 @@ p{
 
 
 /*fran*/
+.main-login-register{
+    background-image: url("/images/fondo-geom.jpg");
+    background-size: cover;
+}
+
+h2{
+    font-size:20px;
+
+}
+.efecto-principal{
+    margin-bottom: 10px;
+    padding-top:20px;
+    text-align: center
+}
+.lines-effect{
+    display: inline-block;
+    position: relative;
+    justify-content: space-around;
+}
+h2::after, h2::before{
+    content:'';
+    position:absolute;
+    width: 25vw;
+    height: 2px;
+    background-color: black;
+    top: 0.6rem
+}
+h2::before{
+    left: -29vw
+}
+h2::after{
+    right: -29vw
+}
 
 
+.login-register-form{
+    width: 60vw;
+    margin: auto;
+}
+.login-register-form label{
+    font-size:14px;
+    margin-bottom: 2px;
+    margin-top:6px;
+    font-family: orbitron
+}
+.control{
+    width: 100%;
+    background-color: #535C66;
+    padding:0.2rem;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    margin-top: 4px;
+    border: none;
+    font-family: purista
+}
+.login-register-form p{
+    font-size:12px;
+    padding:0px;
+}
+.login-register-form a{
+    text-decoration: none;
+    color: black
+}
+.login-register-form a:hover{
+    text-decoration: underline;
+    color: black
+}
+.button{
+    padding: 2px 10px 2px 10px;
+    background-color: #535C66;
+    font-size: 14px;
+    font-family: orbitron;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    margin-top: 4px;
+    border: none;
+    font-weight: bold;
+    color: white
+}
+.login-register-btn{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end
+}
 
+.follow{
+    margin-bottom: 10px;
+    padding-top:20px;
+    text-align: center
+}
+.lines-effect{
+    display: inline-block;
+    position: relative;
+    justify-content: space-around;
+}
+h3::after, h3::before{
+    content:'';
+    position:absolute;
+    width: 29vw;
+    height: 2px;
+    background-color: black;
+    top: 0.6rem
+}
+h3::before{
+    left: -34vw
+}
+h3::after{
+    right: -34vw
+}
+.follow-icons{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin: auto;
+}
+.follow-icons a{
+    text-decoration: none;
+    color: black
+}
+#logo-ig{
+    font-size: 2.5rem;
+    width: 30%
+}
+#logo-fb{
+    font-size: 2.5rem;
+    width: 30%
+}
+#logo-wsp{
+    font-size: 2.5rem;
+    width: 30%
+}
+hr{
+    width: 95vw;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 1px 0px;
+    background-color: black;
+    border: none
+}
+.comentario{
+    width: 80%;
+    margin: auto;
+}
+.envio{
+    width: 100%;
+    margin: auto;
+    padding:10px 0px
 
+}
+.pago{
+    width: 100%;
+    padding:10px 0px;
+    margin: auto;
+}
+.calidad{
+    width: 100%;
+    padding:10px 0px;
+    margin: auto;
+}
+.comentario i {
+    font-size: 1rem;
 
-
-
-
-
-
-
+}
+.comentario span{
+    font-family: orbitron;
+    font-weight: 400;
+}
+.comentario p{
+    font-family: purista;
+    font-size:12px
+}
 
 
 

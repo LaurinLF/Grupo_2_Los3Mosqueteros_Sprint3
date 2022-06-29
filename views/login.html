@@ -35,46 +35,62 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section>
-            <h2>CREAR CUENTA</h2>
-            <form>
-                <div>
-                    <label for="email">Email</label>
-                    <br>
-                    <input type="email" id="email" name="visitor_email" placeholder="ejemplo@gmail.com">
-                </div>
-                <div>
-                    <label for="pasword">Contraseña</label>
-                    <br>
-                    <input type="pasword" id="pasword" name="visitor_pasword" placeholder="Contraseña">
-                    <br> <p>¿Olvidaste tu contraseña?</p>
-                </div>
-            </form> 
+    <main class="main-login-register">
+        <section class="efecto-principal">
+            <h2 class="lines-effect">INICIAR SESIÓN</h2>
+        </section>
+        <!--
+        <section class="login-form">
+           <h4>Email</h4>
+           <input class='control' type="email" id="email" name="visitor_email" placeholder="ejemplo@gmail.com">
+           <h4>Contraseña</h4>
+           <input class='control' type="pasword" id="pasword" name="visitor_pasword" placeholder="Contraseña">
+           <a href=#><p>¿Olvidaste tu contraseña?</p></a>
+           <div class="login-btn">
+           <input class="button" type="submit" value="INICIAR SESIÓN">
+           <p>¿No tenés cuenta? <a href="/register">Registrate acá!</a></p>
+           </div> 
+        </section>
+        -->
+        <form class="login-register-form">
             <div>
-                <button type="submit">INICIAR SESIÓN</button>
+                <label for="email">Email</label>
+                <input class='control' type="email" id="email" name="visitor_email" placeholder="ejemplo@gmail.com">
+            </div>
+            <div>
+                <label for="pasword">Contraseña</label>
+                <input class='control' type="pasword" id="pasword" name="visitor_pasword" placeholder="Contraseña">
+                <a href=#><p>¿Olvidaste tu contraseña?</p></a>
+            </div>
+            <div class="login-register-btn">
+                <input class="button" type="submit" value="INICIAR SESIÓN">
                 <p>¿No tenés cuenta? <a href="/register">Registrate acá!</a></p>
-            </div>    
+            </div>
+
+        </form>
+        
+        <section class="follow">
+            <h3 class="lines-effect">¡SEGUÍNOS!</h3>
         </section>
         <section>
-            <h3>¡Seguínos!</h3>
-            <div>
-                <a href="https://www.instagram.com"><img src="/images/logo-ig.jpg" alt="Instagram"></a>
-                <a href="https://www.facebook.com"><img src="/images/logo-face.jpg" alt="Facebook"></a>
-                <a href="https://web.whatsapp.com"><img src="/images/logo-wsp.jpg" alt="Whatsapp"></a>
+            <div class="follow-icons">
+                <a href="https://www.instagram.com"><!-- img src="/images/logo-ig.jpg" alt="Instagram"--><i class="fab fa-instagram" id="logo-ig"></i></a>
+                <a href="https://www.facebook.com"><!--img src="/images/logo-face.jpg" alt="Facebook"--><i class="fab fa-facebook" id="logo-fb"></i></a>
+                <a href="https://web.whatsapp.com"><!--img src="/images/logo-wsp.jpg" alt="Whatsapp"--><i class="fab fa-whatsapp" id="logo-wsp"></i></a>
             </div>
         </section>
-        <section>
-            <article>
-                <i class="fas fa-truck"><h4>NO TE MUEVAS DE CASA</h4></i>
+        <hr>
+        <section class="comentario">
+            <article class="envio">
+                <i class="fas fa-truck"><span>NO TE MUEVAS DE CASA</span></i>
                 <p>Hacemos envíos a todo el país</p>
             </article>
-            <article>
-                <i class="fas fa-credit-card"><h4>PAGÁ COMO QUIERAS</h4></i>
+            <article class="pago">
+                <i class="fas fa-credit-card"><span>PAGÁ COMO QUIERAS</span></i>
                 <p>Aceptamos crédito, débito o efectivo</p>
             </article>
-            <article>
-                <i class="far fa-handshake"><h4>CALIDAD ASEGURADA</h4></i>
+            <article class="calidad">
+                <i class="far fa-handshake"><span>CALIDAD ASEGURADA</span></i>
                 <p>Usamos materiales de primera claidad</p>
             </article>
         </section>
