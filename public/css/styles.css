@@ -5,19 +5,76 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-family: "Purista", sans-serif;
 }
-
-
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*
+:root{
+    --Negro: #000000;
+    --Blanco: #FFFFFF;
+    --GrisOscuro: #292E33;
+    --GrisClaro: #535C66;
+    --Naranja: #E04B3C
+}
+*/
 /*valen*/
+body{ 
+    background-color: #FFFFFF;
+    margin: 5;
+
+}
+header,
+footer {
+    background-color: #292E33;
+    color:#FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+}
+.top-header{
+    font-size: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 
+ul,li{
+    list-style: none;
+    text-decoration: none;
+}
 
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.naranja-v{
+color:#E04B3C
+}
 
+/*fin header & footer*/
 
+/*Main content*/
+.conteiner-main{
+    width: 100%;
+    display: flex;
+    background-color: #FFFFFF;
+}
 
+main{
+    margin: auto;
+}
 
+.imgproducto-v{
+    display: flex;
+    justify-content: flex-start;
+    
+}
 
-
-
+.infoproducto-v{
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 
