@@ -28,9 +28,9 @@
                     <li><a href = "#">Iniciar sesión</a></li>
                 </ul>
                 <ul>
-                    <li><a href = "#">Home</a></li>
-                    <li><a href = "#">Productos</a></li>
-                    <li><a href = "#">Ofertas</a></li>
+                    <li><a class ="naranja-v" href = "#">HOME</a></li>
+                    <li><a href = "#">PRODUCTOS</a></li>
+                    <li><a href = "#">OFERTAS</a></li>
                 </ul>
             </nav>
         </div>
@@ -52,7 +52,7 @@
            </div> 
         </section>
         -->
-        <form class="login-register-form">
+        <form class="login-register-form" action="#" method="post">
             <div>
                 <label for="email">Email</label>
                 <input class='control' type="email" id="email" name="visitor_email" placeholder="ejemplo@gmail.com">
@@ -61,6 +61,10 @@
                 <label for="pasword">Contraseña</label>
                 <input class='control' type="pasword" id="pasword" name="visitor_pasword" placeholder="Contraseña">
                 <a href=#><p>¿Olvidaste tu contraseña?</p></a>
+            </div>
+            <div class="login-register-btn" id="remember">
+                <label for="remember"><p>Recordar mi usuario</p></label>
+                <input type="checkbox" id="remember" name="remember" value="remember">
             </div>
             <div class="login-register-btn">
                 <input class="button" type="submit" value="INICIAR SESIÓN">
