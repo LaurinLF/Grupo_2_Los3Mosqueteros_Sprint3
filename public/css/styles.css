@@ -335,6 +335,13 @@ hr{
     font-size:12px
 }
 
+section.banner div{
+    width: 100%;
+}
+
+section.banner div img{
+    width: 100%;
+}
 
 
 
