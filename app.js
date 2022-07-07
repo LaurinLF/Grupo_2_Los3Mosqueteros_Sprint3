@@ -16,5 +16,5 @@ app.get('/login',(req,res) => res.sendFile(path.join(viewsPath,"./login.html")))
 
 
 app.listen(port, () => {
-    console.log("Servidor corriendo en el puerto" + port);
+    console.log("Servidor corriendo en el puerto " + port);
 })

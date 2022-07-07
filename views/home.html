@@ -9,31 +9,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link href="//db.onlinewebfonts.com/c/207d3f57810bef8d49e2f1b5f1722fb2?family=Purista" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="/css/styles.css">
-    <title>Detalle del Producto</title>
+    <title>Home</title>
 </head>
 <body>
-    <header>
-        <div class="top-header">
-            <figure class="logo">
-                <img src = "/images/logo.png" alt ="logo de marca">
-            </figure>
-            <div class="form" action="#" method="GET">
-                <div class="input">Buscar</div>
-                <div class="submit"><i class="fa fa-search"></i></div>
+    <header class = "main-header">
+        <div class="top-header" >
+             <img class="logo" src = "/images/logo-marca.png" alt ="logo de marca" >
+             <nav class="links-user">
+                 <ul>
+                     <li><a href = "#">Crear cuenta |</a></li> 
+                     <li><a href = "#"> Iniciar sesión</a></li>
+                 </ul>
+             </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a href = "#">Creá tu cuenta</a></li>
-                    <li><a href = "#">Iniciar sesión</a></li>
-                </ul>
-                <ul>
-                    <li><a href = "#">Home</a></li>
-                    <li><a href = "#">Productos</a></li>
-                    <li><a href = "#">Ofertas</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+            <nav class="bottom-header" >
+                    <ul class = "links-v">
+                        <li><a class ="naranja-v" href = "#">HOME </a></li>
+                        <li><a href = "#">PRODUCTOS </a></li>
+                        <li><a href = "#">OFERTAS</a></li>
+                    </ul>
+                    <div class = "search-v">
+                        <div class="form" action="#" method="GET">
+                            <div class="input">Buscar</div>
+                            <div class="submit"><i class="fa fa-search"></i></div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
     <main class="main-login-register">
         <section class="banner">
             <div>
@@ -98,11 +100,9 @@
                         </div>                
                     </article> 
                 </div>
-                      
             </section>
     </main>
     <footer>
-        <img src = "/images/logo.png" alt ="logo de marca">
         <section>
             <h2>Información</h2>
             <h3>Preguntas Frecuentes</h3>
@@ -110,17 +110,22 @@
         </section>
         <section>
             <h2>Medios de Pago</h2>
-            <div><i class="far fa-money-bill-alt"></i></div>
-            <div><i class="fab fa-cc-visa"></i></div>
-            <div><i class="fab fa-cc-amex"></i></div>
-            <div><i class="fab fa-cc-mastercard"></i></div>
-        </section>
+            <div class="icons-v">
+                <div><i class="far fa-money-bill-alt"></i></div>
+                <div><i class="fab fa-cc-visa"></i></div>
+                <div><i class="fab fa-cc-amex"></i></div>
+                <div><i class="fab fa-cc-mastercard"></i></div>
+            </div>
+            </section>
         <section>
             <h2>Contactanos</h2>
-            <div><i class="fas fa-phone-alt"></i></div>
-            <h3>1111111111</h3>
+            <div class="info-contact">
+                <div><i class="fas fa-phone-alt"></i></div>
+                <h3>1111111111</h3>
+                <br>
             <div><i class="fas fa-envelope"></i></div>
             <h3>los3mosqueteros@gmail.com</h3>
+        </div>
         </section>
         </footer>
 </body>
