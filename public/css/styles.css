@@ -6,9 +6,10 @@ p{
     font-family: "Purista", sans-serif;
 }
 *{
-    margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
 }
 /*
 :root{
@@ -22,7 +23,8 @@ p{
 /*valen*/
 body{ 
     background-color: #FFFFFF;
-    margin: 5;
+    margin: auto;
+    font-size: 12px;
 
 }
 header,
@@ -30,16 +32,128 @@ footer {
     background-color: #292E33;
     color:#FFFFFF;
     font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    height: 150px;
+    
 }
-.top-header{
-    font-size: 85%;
+footer{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 8px;
+    font-weight: 200;
+
+}
+footer h2, h3{
+    font-size: 11px;
+    font-weight: 200;
 }
 
+.main-header{
+    padding: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
-ul,li{
+.icons-v{
+    display:flex;
+    justify-content: space-between;
+}
+
+.info-contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+     
+}
+.logo{
+    width: 75px;
+}
+
+.links-user{
+    margin-top: -45px;
+    margin-bottom: -50px;
+   
+}
+
+.bottom-header{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    
+}
+.links-v{
+    display: flex;
+    padding: 10px;
+    margin-top: -25px;
+    margin-bottom: 15px;
+    margin-right: -15px;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    left: 90px
+}
+
+.links-v li{
+    margin: 0 5px;  
+}
+
+.search-v{
+    margin-left: 99px;
+    position: absolute;
+    bottom: 2px;
+    left: 250px;
+}
+
+.search-v .input{
+    display: inline-block;
+    font-size: 10px;
+    padding: 10px;
+    margin-bottom: 2px;
+    width: 88%;
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+.search-v .submit{
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px;
+    margin-bottom: 2px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    background-color: #FFF;
+    border: 1px solid #000;
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.main-header ul,li{
+    display: inline;
     list-style: none;
     text-decoration: none;
 }
@@ -49,32 +163,107 @@ a{
     text-decoration: none;
 }
 .naranja-v{
-color:#E04B3C
+    color:#E04B3C
 }
 
 /*fin header & footer*/
 
-/*Main content*/
+/*Main content - Product Detail*/
+
 .conteiner-main{
-    width: 100%;
+    padding: 3%;
     display: flex;
-    background-color: #FFFFFF;
+    flex-direction: column;
+    align-items: center;
 }
 
 main{
     margin: auto;
+    background-image: url("/images/fondo-geom.jpg");
+    background-size: cover;
+}
+
+.path-v h3{
+    align-items: flex-start;
 }
 
 .imgproducto-v{
     display: flex;
-    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 8px;
     
 }
 
 .infoproducto-v{
-    display: flex;
-    justify-content: flex-end;
+    width: 100%;
+    text-align: center;
 }
+main h2{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+main h3{
+   padding: 5px;
+   margin-top: 1px;
+   font-size: 13px;
+}
+
+.description-v{
+    word-wrap: break-word;
+    font-weight: 500;
+}
+
+button{
+    font-family: orbitron;
+    font-size: 14px;
+    padding: 6px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #E04B3C;
+    border-radius: 0%;
+    margin-top: 25px;
+
+}
+button:hover{
+    font-weight: bold;
+}
+
+
+.comentario{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.comentario article{
+    padding: 15px 0px;
+    width: 100%;
+
+}
+.comentario article i {
+    font-size: 0,5rem;
+    width: 100%;
+    margin: auto;
+    padding:10px 0px
+
+}
+
+.comentario span{
+    font-family: 'Orbitron' , sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 10px;
+}
+.comentario p{
+    font-family: purista;
+    font-size: 12px;
+}
+
+
+
+/* FIN Main content - Product Detail*/
+
 
 
 
@@ -191,14 +380,24 @@ h2::after{
 
 
 .login-register-form{
-    width: 60vw;
+    width: 80%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.login-register-form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 .login-register-form label{
     font-size:14px;
+    font-weight: 450;
     margin-bottom: 2px;
     margin-top:6px;
-    font-family: orbitron
+    font-family: 'Orbitron', sans-serif;
 }
 .control{
     width: 100%;
@@ -208,7 +407,15 @@ h2::after{
     margin-bottom: 2px;
     margin-top: 4px;
     border: none;
-    font-family: purista
+    font-family: 'Purista', sans-serif
+}
+.control:focus{
+    padding:0.3rem;
+    background-color: #535c66e3;
+}
+.control:focus::placeholder{
+    color: black;
+
 }
 .login-register-form p{
     font-size:12px;
@@ -223,19 +430,26 @@ h2::after{
     color: black
 }
 .button{
-    padding: 2px 10px 2px 10px;
+    padding: 10px 20px;
     background-color: #535C66;
     font-size: 14px;
     font-family: orbitron;
-    border-radius: 2px;
+    border-radius: 5px;
     margin-bottom: 2px;
     margin-top: 4px;
     border: none;
     font-weight: bold;
-    color: white
+    color: white;
+    transition: all 0.4s
+}
+.button:hover{
+    background-color: #292E33;
+    color:#E04B3C;
+    
 }
 .login-register-btn{
     display: flex;
+    padding-top: 10px;
     flex-direction: column;
     width: 100%;
     align-items: flex-end
@@ -251,6 +465,10 @@ h2::after{
     margin-bottom: 10px;
     padding-top:20px;
     text-align: center
+}
+.follow h3{
+    font-size:16px;
+    font-weight: 500;
 }
 .lines-effect{
     display: inline-block;
@@ -283,15 +501,30 @@ h3::after{
 }
 #logo-ig{
     font-size: 2.5rem;
-    width: 30%
+    width: 30%;
+    transition: all 0.4s
+}
+#logo-ig:hover{
+    color: rgb(200, 59, 59);
+    font-size: 3rem;
 }
 #logo-fb{
     font-size: 2.5rem;
-    width: 30%
+    width: 30%;
+    transition: all 0.4s
+}
+#logo-fb:hover{
+    color: blue;
+    font-size: 3rem;
 }
 #logo-wsp{
     font-size: 2.5rem;
-    width: 30%
+    width: 30%;
+    transition: all 0.4s
+}
+#logo-wsp:hover{
+    color: rgb(73, 203, 73);
+    font-size: 3rem;
 }
 hr{
     width: 95vw;
@@ -302,38 +535,7 @@ hr{
     background-color: black;
     border: none
 }
-.comentario{
-    width: 80%;
-    margin: auto;
-}
-.envio{
-    width: 100%;
-    margin: auto;
-    padding:10px 0px
 
-}
-.pago{
-    width: 100%;
-    padding:10px 0px;
-    margin: auto;
-}
-.calidad{
-    width: 100%;
-    padding:10px 0px;
-    margin: auto;
-}
-.comentario i {
-    font-size: 1rem;
-
-}
-.comentario span{
-    font-family: orbitron;
-    font-weight: 400;
-}
-.comentario p{
-    font-family: purista;
-    font-size:12px
-}
 
 section.banner div{
     width: 100%;
@@ -346,7 +548,25 @@ section.banner div img{
 
 
 
-
+@media (min-width: 768px){
+    .comentario{
+        padding: 2%;
+        width: 80%;
+        display:flex;
+        justify-content: space-around;
+        justify-content: center;
+        align-items: flex-start;
+        margin: auto;
+        text-align: center;
+    }
+    .comentario article  {
+        width: 30%;
+    }
+    .login-register-form div {
+        width: 60%;
+        margin: auto;
+    }
+}
 
 
 

@@ -13,54 +13,80 @@
     <title>Detalle del Producto</title>
 </head>
 <body>
-    <header>
-        <div class="top-header">
-            <figure class="logo">
-                <img src = "/images/logo.png" alt ="logo de marca">
-            </figure>
-            <div class="form" action="#" method="GET">
-                <div class="input">Buscar</div>
-                <div class="submit"><i class="fa fa-search"></i></div>
+    <header class = "main-header">
+        <div class="top-header" >
+            <a href="/"><img class="logo" src = "/images/logo-b.svg" alt ="logo de marca" ></a>
+             <nav class="links-user">
+                 <ul>
+                     <li><a href = "/register">Crear cuenta |</a></li> 
+                     <li><a href = "/login">Iniciar sesión</a></li>
+                 </ul>
+             </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a href = "#">Creá tu cuenta</a></li>
-                    <li><a href = "#">Iniciar sesión</a></li>
-                </ul>
-                <ul>
-                    <li><a class ="naranja-v" href = "#">HOME</a></li>
-                    <li><a href = "#">PRODUCTOS</a></li>
-                    <li><a href = "#">OFERTAS</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+            <nav class="bottom-header" >
+                    <ul class = "links-v">
+                        <li><a class ="naranja-v" href = "/">HOME </a></li>
+                        <li><a href = "/">PRODUCTOS </a></li>
+                        <li><a href = "/">OFERTAS</a></li>
+                    </ul>
+                    <div class = "search-v">
+                        <div class="form" action="#" method="GET">
+                            <div class="input">Buscar</div>
+                            <div class="submit"><i class="fa fa-search"></i></div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
     <main>
         <div class="conteiner-main">
-            <section>
-                <h4>Inicio/Categoria/Escritorio</h4>
-                    <div class="imgproducto-v">
-                        <img src ="/images/escritorio.jpg" alt="Escritorio">
-                    </div> 
+            <div class ="path-v">
+                <h3>Inicio/Categoria/Escritorio</h3>
+            </div>
+                    <img class="imgproducto-v" src ="/images/escritorio.jpg" alt="Escritorio">
                     <div class="infoproducto-v">
                         <h2>Escritorio</h2>
                         <br>
                         <h2>$40.000</h2>
                         <br>
                         <h3>Descripción:
-                            <p>lorem blabla</p>
+                            <p class="description-v"> Escritorio hecho con madera refinada y soporte de hierro en forma de X. Con un atractivo diseño, este modelo combina lo fino y delicado con el estilo industrial e informal, ideal para cualquier espacio de la casa.</p>
                         </h3>
                         <br>
                         <h3>Medidas:
-                            <p>lorem blabla</p>
+                            <p>74cm de altura - 60 cm de ancho - 120cm de largo.</p>
                         </h3>
                         <br>
+                        <h3>Información adicional:
+                            <p class = "description-v">El modelo se entregará armado al domicilio indicado. Consulte el costo de envió según su ubicación.</p>
+                            <p class = "description-v">Las medidas pueden ser personalizadas según su preferencia.</p>
+                        </h3>
+                        <form action = "/carrito" method = "POST"> 
+                            <p>
+                                <button type = "submit">Agregar al carrito</button>
+                            </p>
+                        </form>
                     </div>
-            </section>
-        </div>
+                </div>
+                <section class="follow">
+                    <h3 class="lines-effect">CONOCE MÁS</h3>
+                </section>
+                <section class="comentario">
+                    <article class="envio">
+                        <i class="fas fa-truck"><span>NO TE MUEVAS DE CASA</span></i>
+                        <p>Hacemos envíos a todo el país</p>
+                    </article>
+                    <article class="pago">
+                        <i class="fas fa-credit-card"><span>PAGÁ COMO QUIERAS</span></i>
+                        <p>Aceptamos crédito, débito o efectivo</p>
+                    </article>
+                    <article class="calidad">
+                        <i class="far fa-handshake"><span>CALIDAD ASEGURADA</span></i>
+                        <p>Usamos materiales de primera calidad</p>
+                    </article>
+                </section>
+            
         </main>
     <footer>
-        <img src = "/images/logo.png" alt ="logo de marca">
         <section>
             <h2>Información</h2>
             <h3>Preguntas Frecuentes</h3>
@@ -68,17 +94,22 @@
         </section>
         <section>
             <h2>Medios de Pago</h2>
-            <div><i class="far fa-money-bill-alt"></i></div>
-            <div><i class="fab fa-cc-visa"></i></div>
-            <div><i class="fab fa-cc-amex"></i></div>
-            <div><i class="fab fa-cc-mastercard"></i></div>
-        </section>
+            <div class="icons-v">
+                <div><i class="far fa-money-bill-alt"></i></div>
+                <div><i class="fab fa-cc-visa"></i></div>
+                <div><i class="fab fa-cc-amex"></i></div>
+                <div><i class="fab fa-cc-mastercard"></i></div>
+            </div>
+            </section>
         <section>
             <h2>Contactanos</h2>
-            <div><i class="fas fa-phone-alt"></i></div>
-            <h3>1111111111</h3>
+            <div class="info-contact">
+                <div><i class="fas fa-phone-alt"></i></div>
+                <h3>1111111111</h3>
+                <br>
             <div><i class="fas fa-envelope"></i></div>
             <h3>los3mosqueteros@gmail.com</h3>
+        </div>
         </section>
         </footer>
 </body>
