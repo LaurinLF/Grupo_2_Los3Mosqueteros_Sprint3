@@ -1,58 +1,114 @@
-
-
-
-<header class = "main-header">
-    <div class="top-header" >
-        <a href="/"><img class="logo" src = "/images/logo-b.svg" alt ="logo de marca" ></a>
-         <nav class="links-user">
-             <ul>
-                 <li><a href = "/register">Crear cuenta |</a></li> 
-                 <li><a href = "/login">Iniciar sesión</a></li>
-             </ul>
-         </nav>
-        </div>
-        <nav class="bottom-header" >
-                <ul class = "links-v">
-                    <li><a class ="naranja-v" href = "/">HOME </a></li>
-                    <li><a href = "/">PRODUCTOS </a></li>
-                    <li><a href = "/">OFERTAS</a></li>
-                </ul>
-                <div class = "search-v">
-                    <div class="form" action="#" method="GET">
-                        <div class="input">Buscar</div>
-                        <div class="submit"><i class="fa fa-search"></i></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/207d3f57810bef8d49e2f1b5f1722fb2?family=Purista" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Carrito producto</title>
+</head>
+<body>
+    <header class = "main-header">
+        <div class="top-header" >
+            <a href="/"><img class="logo" src = "/images/logo-b.svg" alt ="logo de marca" ></a>
+             <nav class="links-user">
+                 <ul>
+                     <li><a href = "/register">Crear cuenta |</a></li> 
+                     <li><a href = "/login">Iniciar sesión</a></li>
+                 </ul>
+             </nav>
+            </div>
+            <nav class="bottom-header" >
+                    <ul class = "links-v">
+                        <li><a class ="naranja-v" href = "/">HOME </a></li>
+                        <li><a href = "/">PRODUCTOS </a></li>
+                        <li><a href = "/">OFERTAS</a></li>
+                    </ul>
+                    <div class = "search-v">
+                        <div class="form" action="#" method="GET">
+                            <div class="input">Buscar</div>
+                            <div class="submit"><i class="fa fa-search"></i></div>
+                        </div>
                     </div>
+                </nav>
+            </header>
+    <main>
+        <h1 class="lines-effect">CARRITO </h1>
+        <section class="detalle-carrito">
+                <div class="columna-carrito"> 
+                    <div><i class="tus productos">Tus Productos</i></div>
+                    <div><i class="precio-producto">Precio</i></div>
+                    <div><i class="cantidad-producto">Cantidad</i></div>
+                    <div><i class="total-producto">Total</i></div>
                 </div>
-            </nav>
-        </header>
-
-
-
-<footer>
-    <section>
-        <h2>Información</h2>
-        <h3>Preguntas Frecuentes</h3>
-        <h3>Quienes Somos</h3>
-    </section>
-    <section>
-        <h2>Medios de Pago</h2>
-        <div class="icons-v">
-            <div><i class="far fa-money-bill-alt"></i></div>
-            <div><i class="fab fa-cc-visa"></i></div>
-            <div><i class="fab fa-cc-amex"></i></div>
-            <div><i class="fab fa-cc-mastercard"></i></div>
+        </section>
+        <section class="vista-horizontal-compra">
+                <button type="boton" class="eliminar-producto"> x </button>
+                <img width="300" height="300" src ="/images/escritorio.jpg" alt="Escritorio">
+                <div class="nombre-producto" data-title="Producto"> <a href="/images/escritorio.jpg">Escritorio </a></div>
+                <div class="precio-producto" data-title="Precio"> <span class="precio-escritorio"><span class="precio-escritorio-simbolo">$</span>13200</span></div>
+                <div class="cantidad-producto" data-title="Cantidad"><div class="Cantidad">
+                    <label class="screen-reader-text" for="quantity_62c763d0b7977">Escritorio Cantidad</label>
+                    <span class="input-qty-pm"><button type="button" class="input-pm-act input-pm-minus">-</button><input type="text" id="quantity_62c763d0b7977" class="input-text qty text" step="1" min="0" max="" name="cart[1ce927f875864094e3906a4a0b5ece68][qty]" value="1" title="Cantidad" size="4" inputmode="numeric"><button type="button" class="input-pm-act input-pm-plus">+</button></span>
+                </div>
+                <span class="precio-total-escritorio"><span class="precio-escritorio-simbolo">$</span>13200</span>
+                <label for="coupon_code">¡Colocá tu Cupón de descuento aquí!:</label>
+                <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Escriba su código aquí">
+                <button type="submit" class="button" name="apply_coupon" value="Aplicar cupón">Aplicar cupón</button>
+                <button type="submit" class="button" name="finalizar-compra" value="Finalizar-compra" disabled="">Finalizar Compra</button>
+        </section>
+        <section class="vista-final-compra">
+                <h2>Total del carrito</h2>
+                <div class="table-compra"><table cellspacing="0" class="tabla de compra">
+                <div class="cart-subtotal">
+                        <h3>Subtotal</h3>
+                <div data-title="Subtotal"><span class="precio-escritorio-total"><span class="precio-escritorio-simbolo">$</span>13200</span></div>
+                <div class="envio">
+                    <h3>Envío</h3>
+                <div data-title="Envío">
+                    <ul id="metodo-envio" class="metodos-de-envio">
+                        <li><p>Via Cargo a domicilio</p><li>
+                        <li><p>Via Cargo retiro en sucursal </p><li>
+                        <li><p>Oca retiro en sucursal </p><li>
+                        <li><p>Via Cargo a domicilio </p><li>    
+                    </ul>
+                    <div class="total-orden">
+                        <h3>Total</h3>
+                    <span data-title="Total"><strong><span class="precio-total"><span class="precio-total-simbolo">$</span>13200</span></strong>
+                    </div>
+                    <button type="submit" class="button" name="finalizar-compra" value="Finalizar-compra" disabled="">Finalizar Compra</button>
+        </section> 
+    </main>
+    <footer>
+        <section>
+            <h2>Información</h2>
+            <h3>Preguntas Frecuentes</h3>
+            <h3>Quienes Somos</h3>
+        </section>
+        <section>
+            <h2>Medios de Pago</h2>
+            <div class="icons-v">
+                <div><i class="far fa-money-bill-alt"></i></div>
+                <div><i class="fab fa-cc-visa"></i></div>
+                <div><i class="fab fa-cc-amex"></i></div>
+                <div><i class="fab fa-cc-mastercard"></i></div>
+            </div>
+            </section>
+        <section>
+            <h2>Contactanos</h2>
+            <div class="info-contact">
+                <div><i class="fas fa-phone-alt"></i></div>
+                <h3>1111111111</h3>
+                <br>
+            <div><i class="fas fa-envelope"></i></div>
+            <h3>los3mosqueteros@gmail.com</h3>
         </div>
         </section>
-    <section>
-        <h2>Contactanos</h2>
-        <div class="info-contact">
-            <div><i class="fas fa-phone-alt"></i></div>
-            <h3>1111111111</h3>
-            <br>
-        <div><i class="fas fa-envelope"></i></div>
-        <h3>los3mosqueteros@gmail.com</h3>
-    </div>
-    </section>
-    </footer>
+        </footer>
 </body>
 </html>
