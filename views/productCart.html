@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <title>Carrito producto</title>
+</head>
 </head>
 <body>
     <header class = "main-header">
@@ -34,9 +36,23 @@
                         <div class="form" action="#" method="GET">
                             <div class="input">Buscar</div>
                             <div class="submit"><i class="fa fa-search"></i></div>
-                        </div>
                     </div>
-                </nav>
+            </nav>    
+                         </div>
+                    <div class="burger-menu">
+                        <nav class="navigation">
+                            <label class="burger-menu" for="burger"><label for="burger"> ☰ </label>
+                            <input type="checkbox" class="burger-check" id="burger">
+                            <ul class="burger-options">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="#">Productos</a></li>
+                                <li><a href="#">Ofertas</a></li>
+                                <li><a href="/register">Crear Cuenta</a></li>
+                                <li><a href="/login">Inicia Sesión</a></li>
+                                <li><a href="/productCart">Carrito<i class="fa-solid fa-cart-shopping"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
             </header>
         <main class="main-carrito">
             <section class="efecto-principal">
@@ -59,9 +75,17 @@
                     <tr>
                         <td class="cart-table-image"><img src="/images/escritorio.jpg" alt="Imagen de producto"></td>
                         <td class="cart-table-description"><p>Escritorio Madera Industrial</p></td>
-                        <td class="cart-table-price">$ 13200</td>
+                        <td class="cart-table-price">$ 50000</td>
                         <td class="cart-table-quantity"><input type="number" class="product-quantity" name="product-quantity" placeholder="2"></td>
-                        <td class="cart-table-total">$ 13200</td>
+                        <td class="cart-table-total">$ 50000</td>
+                        <td class="cart-table-delete"><a href="#"><i class="fa fa-trash"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td class="cart-table-image"><img src="/images/espejo.jpg" alt="Imagen de producto"></td>
+                        <td class="cart-table-description"><p>Espejo de armazon de hierro</p></td>
+                        <td class="cart-table-price">$ 20000</td>
+                        <td class="cart-table-quantity"><input type="number" class="product-quantity" name="product-quantity" placeholder="2"></td>
+                        <td class="cart-table-total">$ 20000</td>
                         <td class="cart-table-delete"><a href="#"><i class="fa fa-trash"></i></a></td>
                     </tr>
                 </tbody>    
@@ -70,11 +94,11 @@
         <div class="cart-bottom">
             <div class="total-price-container">
                 <div class="total-price">
-                    <p> Precio total : $ 13200</p>
+                    <p> Precio total : $ 70000</p>
                 </div>
             </div>
             <div class="return">
-                <p><a href="/"><i class="fa-solid fa-angle-left"></i> ¡Segui Comprando!</a></p>
+                <p><a href="/"><i class="fa fa-arrow-left"></i> ¡Segui Comprando!</a></p>
             </div>
             <div class="confirm-cart">
                 <p><a href="#">Confirma tu compra</a></p>
