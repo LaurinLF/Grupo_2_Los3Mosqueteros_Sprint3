@@ -555,7 +555,7 @@ ul{
     display:block;
   }
 
-  input {
+  .burguer-check {
     display: none;
   }
 
@@ -563,7 +563,7 @@ div.burger-menu a {
     text-decoration: none;
     color: white;
     transition: color 0.2s ease;
-    text-align: center;
+    text-align: left;
 }
 
 div.burger-menu a:hover {
@@ -572,9 +572,10 @@ div.burger-menu a:hover {
 
 
 
-ul.burger-options {
+.burger-options {
+
     box-sizing: content-box;
-    display: inline-block;
+    display: list-item inline;
     justify-content: center;
     border: 2px solid #292E33;
     list-style-type: none;
@@ -582,13 +583,14 @@ ul.burger-options {
     margin: 5px;
     padding: 40px;
     width: 100%;
-    top: 100%;
+    top: 50%;
+    left: 50%;
     color: white;
     background-color: #292E33;
     line-height: 20px;
     text-align: left;
     user-select: none;
-    transform: translate(0 , -200%);
+    transform: translate(0 , -100%);
     opacity: 0;
     z-index: 100;
 
@@ -599,15 +601,19 @@ ul.burger-options {
     display: flex;
     padding: 5px 0;
     font-size: 14px;
-    text-align: left;
+    text-align: center;
     border-radius: 20px;
 }
 
 .burger-menu input:checked ~ ul{
+    display: block;
+    position: center;
     transform: none;
     opacity: 0.70;
     width: 200%;
-    text-align: start;
+    text-align: center;
+    margin: 0 auto;
+
 }
 
 
