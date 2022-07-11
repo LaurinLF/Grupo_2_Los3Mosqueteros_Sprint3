@@ -10,12 +10,13 @@
     <link href="//db.onlinewebfonts.com/c/207d3f57810bef8d49e2f1b5f1722fb2?family=Purista" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href=".vscode">
     <title>Detalle del Producto</title>
 </head>
 <body>
     <header class = "main-header">
         <div class="top-header" >
-            <a href="/"><img class="logo" src = "/images/logo-b.svg" alt ="logo de marca" ></a>
+            <a href="/"><img class="logo" src = "/images/logo-b.svg" alt ="logo de marca"></a>
              <nav class="links-user">
                  <ul>
                      <li><a href = "/register">Crear cuenta |</a></li> 
@@ -31,17 +32,18 @@
                     </ul>
                     <div class = "search-v">
                         <div class="form" action="#" method="GET">
-                            <div class="input">Buscar</div>
-                            <div class="submit"><i class="fa fa-search"></i></div>
+                            <div class="input">Buscar
+                                <div class="submit"><i class="fa fa-search"></i></div>
+                            </div>
                         </div>
                     </div>
                 </nav>
             </header>
     <main>
+        <section class="efecto-principal-v">
+            <h3 class="lines-effect-v">Detalle del Producto</h3>
+        </section>
         <div class="conteiner-main">
-            <div class ="path-v">
-                <h3>Inicio/Categoria/Escritorio</h3>
-            </div>
                     <img class="imgproducto-v" src ="/images/escritorio.jpg" alt="Escritorio">
                     <div class="infoproducto-v">
                         <h2>Escritorio</h2>
@@ -60,9 +62,9 @@
                             <p class = "description-v">El modelo se entregará armado al domicilio indicado. Consulte el costo de envió según su ubicación.</p>
                             <p class = "description-v">Las medidas pueden ser personalizadas según su preferencia.</p>
                         </h3>
-                        <form action = "/carrito" method = "POST"> 
+                        <a href="/productCart"><form action = "productCart.html" method = "POST"></a> 
                             <p>
-                                <button type = "submit">Agregar al carrito</button>
+                                <button class = "button-carrito" type = "submit">Agregar al carrito</button>
                             </p>
                         </form>
                     </div>
@@ -86,12 +88,14 @@
                 </section>
             
         </main>
-    <footer>
-        <section>
-            <h2>Información</h2>
-            <h3>Preguntas Frecuentes</h3>
-            <h3>Quienes Somos</h3>
-        </section>
+    <footer class ="footer-detail">
+        <div>
+            <section>
+                <h2>Información</h2>
+                <h3>Preguntas Frecuentes</h3>
+                <h3>Quienes Somos</h3>
+            </section>
+            <br>
         <section>
             <h2>Medios de Pago</h2>
             <div class="icons-v">
@@ -101,16 +105,13 @@
                 <div><i class="fab fa-cc-mastercard"></i></div>
             </div>
             </section>
-        <section>
+            <br>
+        <section class ="contac-v">
             <h2>Contactanos</h2>
-            <div class="info-contact">
-                <div><i class="fas fa-phone-alt"></i></div>
-                <h3>1111111111</h3>
-                <br>
-            <div><i class="fas fa-envelope"></i></div>
-            <h3>los3mosqueteros@gmail.com</h3>
-        </div>
+                <div><i class="fas fa-phone-alt"><span>1111111111</span></i></div>
+                <div><i class="fas fa-envelope"></i><span>los3mosqueteros@gmail.com</span></i></div>
         </section>
-        </footer>
+    </div>
+    </footer>
 </body>
 </html>
