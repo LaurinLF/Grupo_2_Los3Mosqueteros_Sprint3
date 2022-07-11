@@ -6,9 +6,9 @@ p{
     font-family: "Purista", sans-serif;
 }
 *{
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     
 }
 /*
@@ -25,6 +25,7 @@ body{
     background-color: #FFFFFF;
     margin: auto;
     font-size: 12px;
+    width: 100%;
 
 }
 header,
@@ -33,9 +34,13 @@ footer {
     color:#FFFFFF;
     font-family: 'Orbitron', sans-serif;
     font-size: 12px;
-    height: 150px;
-    
+    width: 100%;
+     
 }
+.footer-detail{
+    height: 150px;
+}
+
 footer{
     display: flex;
     justify-content: space-around;
@@ -44,6 +49,7 @@ footer{
     text-align: center;
     font-size: 8px;
     font-weight: 200;
+
 }
 footer div{
     margin: auto;
@@ -174,6 +180,8 @@ a{
 }
 
 main{
+    display: block;
+    width: 100%;
     margin: auto;
     background-image: url("/images/fondo-geom.jpg");
     background-size: cover;
@@ -181,7 +189,7 @@ main{
 
 .imgproducto-v{
     display: flex;
-    width: 100%;
+    width: 90%;
     margin-bottom: 8px;
 }
 
@@ -189,6 +197,7 @@ main{
     width: 100%;
     text-align: center;
 }
+
 main h2{
     text-align: center;
     font-size: 16px;
@@ -332,7 +341,7 @@ main h3{
 
 @media (min-width: 1024px) {
     .logo{
-        width: 110px;
+        width: 112px;
     }
     .links-v{
         margin-bottom: 35px;
@@ -342,7 +351,7 @@ main h3{
         margin: 0 10px;  
     }
     .search-v .input{
-        font-size: 10px;
+        font-size: 12px;
         left: 850px;
         bottom: 45px;
         border-radius: 5px;
@@ -350,9 +359,6 @@ main h3{
     }
     .search-v .input i{
         margin-left: 50px;
-    }
-    .page-v{ 
-        display: none;
     }
     .imgproducto-v{
         width: 50%;
@@ -363,15 +369,19 @@ main h3{
 
     }
     .conteiner-main{
-    flex-direction: row;
+        flex-direction: row;
     }
 
+    .comentario span{
+        font-size: 15px;
+    }
+    .comentario p{
+        font-size: 13px;
+    }
+    
+
+
 }
-
-
-
-
-
 
 
 
