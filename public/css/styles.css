@@ -320,34 +320,34 @@ div.burger-menu a:hover {
 }
 
 div.burger-menu ul.burger-options {
+
+    box-sizing: content-box;
     display: block;
-    position: center;
-    text-align: center;
-    padding: 50px;
+    border: 1px solid #292E33;
     background-color: #292E33;
-    list-style-type: none;
-    border-radius: 20px;
-    top: 100%;
-    left:0;
-    right:50%;
-    transform: translate(0 , -300%);
-    z-index: 100;
+    border-radius: 100px;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    user-select: none;
+    transform: translate(0 , -200%);
     opacity: 0;
-    width: 100px;
 
 }
+
 
 div.burger-menu .burger-options li {
     padding: 10px 0;
     font-size: 14px;
-    text-align: justify;
+    text-align: center;
     border-radius: 20px;
 }
 
 .burger-menu input:checked ~ ul{
     transform: none;
     opacity: 0.70;
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -414,7 +414,7 @@ h1::after{
 }
 
 .cart-table thead td{
-    color: rgb(10, 10, 10);
+    color: rgb(67, 61, 61);
     font-weight: 400;
     padding:5px 0;
     font-size: 14px;
