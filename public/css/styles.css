@@ -6,9 +6,9 @@ p{
     font-family: "Purista", sans-serif;
 }
 *{
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     
 }
 /*
@@ -25,6 +25,7 @@ body{
     background-color: #FFFFFF;
     margin: auto;
     font-size: 12px;
+    width: 100%;
 
 }
 header,
@@ -33,9 +34,12 @@ footer {
     color:#FFFFFF;
     font-family: 'Orbitron', sans-serif;
     font-size: 12px;
-    height: 150px;
-    
+    width: 100%;
+    height: 140px;
+     
 }
+
+
 footer{
     display: flex;
     justify-content: space-around;
@@ -44,6 +48,7 @@ footer{
     text-align: center;
     font-size: 8px;
     font-weight: 200;
+
 }
 footer div{
     margin: auto;
@@ -174,14 +179,40 @@ a{
 }
 
 main{
+    display: block;
+    width: 100%;
     margin: auto;
     background-image: url("/images/fondo-geom.jpg");
     background-size: cover;
 }
+.efecto-principal-v{
+    margin-bottom: 10px;
+    padding-top: 8px;
+    text-align: center;
+}
+.lines-effect-v{
+    display: inline-block;
+    position: relative;
+    justify-content: space-around;
+}
+h3::after, h3::before{
+    content:'';
+    position:absolute;
+    width: 25vw;
+    height: 2px;
+    background-color: black;
+    top: 0.6rem
+}
+h3::before{
+    left: -29vw
+}
+h3::after{
+    right: -29vw
+}
 
 .imgproducto-v{
     display: flex;
-    width: 100%;
+    width: 90%;
     margin-bottom: 8px;
 }
 
@@ -189,6 +220,7 @@ main{
     width: 100%;
     text-align: center;
 }
+
 main h2{
     text-align: center;
     font-size: 16px;
@@ -276,21 +308,29 @@ main h3{
         margin-top: -60px;
         font-size: 14px;
     }
+    .form{
+        width: 15%;
+        position: absolute;
+    }
     .search-v .input{
+        bottom: 45px;
+        position: relative;
         font-size: 10px;
-        left: 650px;
-        bottom: 35px;
+        left: 600px;
         border-radius: 5px;
         padding: 5px 10px;
     }
     .search-v .input i{
-        margin-left: 20px;
+        margin-left: 1px;
     }
+    .footer-detail{
+        height: 150px;
+    }
+
     footer{
         flex-direction: row; 
         justify-content: space-around;
     }
-
     footer div{
         width: 80%;
         display: flex;
@@ -332,117 +372,82 @@ main h3{
 
 @media (min-width: 1024px) {
     .logo{
-        width: 110px;
+        width: 112px;
     }
     .links-v{
         margin-bottom: 35px;
-        font-size: 18px;
     }
     .links-v li{
+        font-size: 15px;
         margin: 0 10px;  
     }
     .search-v .input{
-        font-size: 10px;
+        font-size: 12px;
         left: 850px;
-        bottom: 45px;
+        bottom: 55px;
         border-radius: 5px;
         padding: 5px 10px;
     }
     .search-v .input i{
         margin-left: 50px;
     }
-    .page-v{ 
-        display: none;
-    }
     .imgproducto-v{
         width: 50%;
+        margin: 3px 3px;
+        align-items: stretch;
     }
     .infoproducto-v{
         width: 50%;
-       font-size: 18px;
-
+        font-size: 18px;
+        margin-top: .30px;
     }
     .conteiner-main{
-    flex-direction: row;
+        flex-direction: row;
+        width: 100%;
+        padding: 2%;
+    }
+    .comentario span{
+        font-size: 15px;
+    }
+    .comentario p{
+        font-size: 13px;
+    }
+    .footer-detail{
+        height: 240px;
+    }
+    .efecto-principal-v{
+        width: 100%;
+        margin-bottom: 1px;
+        padding-top: 10px;
+        text-align: center;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    .lines-effect-v{
+        display: inline-block;
+        position: relative;
+        justify-content: space-around;
+        left: 10px;
+        font-size: 14px;
+    
+    }
+    h3::after, h3::before{
+        content:'';
+        position:absolute;
+        width: 25vw;
+        height: 2px;
+        background-color: black;
+        top: 0.6rem
+    }
+    h3::before{
+        left: -29vw
+    }
+    h3::after{
+        right: -29vw
     }
 
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1277,8 +1282,6 @@ section.banner div img{
 
 
 
-
-/* laurin*/
 
 
 
