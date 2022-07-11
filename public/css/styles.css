@@ -906,6 +906,148 @@ h1::after{
 
 
 
+/* Ezequiel */
+
+main section div.products {
+    padding: 20px;
+}
+
+main section div.products article {
+    background-color: #D9D9D9; 
+    border-radius: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5%;
+    transition: all 600ms;
+}
+
+main section div.products article:hover {
+    box-shadow: 0px 0px 10px #292E33;
+    border: 1px solid #292E33;
+}
+
+main section div.products figure {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+main section div.products img {
+    padding: 10% 10% 2%;
+    width: 100%;
+    max-height: 300px;
+}
+
+div.add-cart {
+    width: 50%;
+    margin: 0 auto; 
+}
+
+p.price,
+p.discount,
+div.main-article .add-cart p {
+    font-family: Orbitron; 
+}
+
+div.main-article .add-cart p {
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    -khtml-user-select: none;    
+    -moz-user-select: none;      
+    -ms-user-select: none;       
+    user-select: none;
+}
+
+div.main-article .price-and-discount {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    width: 80%;
+    margin: 0 auto; 
+    padding-top: 2%;
+    padding-bottom: 2%
+}
+
+p.price {
+    width: 50%;
+}
+
+p.discount {
+    width: 40%;
+    font-size: 10px;
+    align-self: center;
+}
+
+h4.description {
+    padding-left: 10%;
+}
+
+div.main-article .add-cart {
+    text-align: center;
+    margin: 0 auto; 
+    font-family: Orbitron;
+    padding: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-family: purista; 
+    border-radius: 5px; 
+    font-weight: bold;
+    font-size: 14px;
+    color: white; 
+    background-color: #535C66;
+    transition: all 0.4s;
+}
+
+div.main-article .add-cart:hover {
+    background-color: #292E33;
+    color:#E04B3C;
+}
+
+p.discount {
+    color: #E04B3C;
+}
+
+
+@media (min-width: 480px) {
+    main section div.products {
+        display: flex; 
+        flex-wrap: wrap; 
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: flex-start;
+    }
+
+    main section div.products article {
+        width: 45%;
+    }
+
+
+}
+
+@media (min-width: 960px) {
+    main section div.products article {
+        width: 22%;
+        margin-bottom: 0%;
+    }
+
+    p.price,
+    h4.description {
+        font-size: 14px;
+    }
+
+    p.discount {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
