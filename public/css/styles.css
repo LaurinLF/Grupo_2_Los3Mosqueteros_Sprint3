@@ -986,7 +986,9 @@ h4.description {
     padding-left: 10%;
 }
 
-div.main-article .add-cart {
+a.add-cart {
+    width: 50%;
+    display: block;
     text-align: center;
     margin: 0 auto; 
     font-family: Orbitron;
@@ -1002,7 +1004,11 @@ div.main-article .add-cart {
     transition: all 0.4s;
 }
 
-div.main-article .add-cart:hover {
+a.add-cart p{
+    font-family: Orbitron;
+}
+
+a.add-cart:hover {
     background-color: #292E33;
     color:#E04B3C;
 }
