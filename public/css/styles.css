@@ -530,7 +530,6 @@ main h3{
     padding: 5px;
     color: white;
     font-variant: small-caps;
-    background-size: cover;
 }
 
 label.burger-menu {
@@ -540,7 +539,7 @@ label.burger-menu {
     margin: 0 auto;
     text-align: center;
     background-color: #292E33;
-    border-radius: 20%;
+    border-radius: 10%;
     box-shadow: 0 0 5px #fff;
 }
 
@@ -569,41 +568,51 @@ div.burger-menu a {
     text-decoration: none;
     color: white;
     transition: color 0.2s ease;
+    text-align: center;
 }
 
 div.burger-menu a:hover {
     color:#E04B3C;
 }
 
-div.burger-menu ul.burger-options {
 
+
+ul.burger-options {
     box-sizing: content-box;
-    display: block;
-    border: 1px solid #292E33;
+    display: inline-block;
+    justify-content: center;
+    border: 2px solid #292E33;
+    list-style-type: none;
+    border-radius: 1em;
+    margin: 5px;
+    padding: 40px;
+    width: 100%;
+    top: 100%;
+    color: white;
     background-color: #292E33;
-    border-radius: 100px;
-    width: 50px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
+    line-height: 20px;
+    text-align: left;
     user-select: none;
     transform: translate(0 , -200%);
     opacity: 0;
+    z-index: 100;
 
 }
 
 
-div.burger-menu .burger-options li {
-    padding: 10px 0;
+.burger-options li {
+    display: flex;
+    padding: 5px 0;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
     border-radius: 20px;
 }
 
 .burger-menu input:checked ~ ul{
     transform: none;
     opacity: 0.70;
-    width: 100%;
+    width: 200%;
+    text-align: start;
 }
 
 
@@ -635,6 +644,34 @@ h1::before{
 }
 h1::after{
     right: -34vw
+}
+
+.main-header-carrito {
+    background-color: #292E33;
+    color:#FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    height: 160px;
+}
+
+.search-v .input-buscar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #535C66;
+    font-family: orbitron;
+    border: none;
+    transition: all 0.4s;
+    color: white;
+    font-weight: 200;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: relative;
+    font-size: 9px;
+    left: 350px;
+    bottom: 20px;
+}
+.search-v .input-buscar i{
+    margin-left: 3px;
 }
 
 .cart {
@@ -763,32 +800,20 @@ h1::after{
     transition: all 0.5s;
 }
 
+
+
 /* Medias queries carrito */
 
-@media (min-width: 481px) {
+@media (min-width: 450px) {
 
     /*HEADER*/
 
-    .logo{
-        width: 90px;
-    }
-    .links-v{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        position: absolute;
-        padding: 5px;
-        margin-top: -50px;
-        margin-bottom: 10px;
-        right: 90px;
-        font-size: 14px;
-    }
-    .links-v li{
-        margin: 0 5px;  
-    }
-    .links-user{
-        margin-top: -80px;
-        font-size: 14px;
+    .main-header-carrito {
+        background-color: #292E33;
+        color:#FFFFFF;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 12px;
+        height: 140px;
     }
     .search-v .input-buscar{
         font-size: 10px;
@@ -813,34 +838,20 @@ h1::after{
 }
 
 @media (min-width: 768px){ 
-    .logo{
-        width: 105px;
-    }
-    .links-v{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        position: absolute;
-        padding: 10px;
-        margin-top: -50px;
-        margin-bottom: 15px;
-        right: 90px;
-        font-size: 14px;
-    }
-    .links-v li{
-        margin: 0 5px;  
-    }
-    .links-user{
-        margin-top: -60px;
-        font-size: 14px;
-    }
+
     .search-v .input-buscar{
         font-size: 10px;
-        right: 650px;
+        left: 650px;
         bottom: 35px;
         border-radius: 5px;
         padding: 5px 10px;
     }
+
+    .form {
+        width:auto;
+        position: absolute;
+    }
+
     .search-v .input-buscar i{
         margin-right: 20px;
     }
@@ -849,18 +860,8 @@ h1::after{
     }
     
 
-
 @media (min-width: 1024px) {
-    .logo{
-        width: 110px;
-    }
-    .links-v{
-        margin-bottom: 35px;
-        font-size: 18px;
-    }
-    .links-v li{
-        margin: 0 10px;  
-    }
+    
     .search-v .input-buscar{
         font-size: 10px;
         left: 850px;
