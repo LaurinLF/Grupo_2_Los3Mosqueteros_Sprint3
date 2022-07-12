@@ -524,7 +524,7 @@ main h3{
 /* carrito producto */
 
 /*burguer menu*/
-
+/* Consultar dudas
   label.burger-menu i {
     font-size: 14px;
     padding: 5px;
@@ -620,7 +620,7 @@ div.burger-menu a:hover {
     margin: 0 auto;
 
 }
-
+*/
 
 main{
     margin: auto;
@@ -809,10 +809,8 @@ h1::after{
 
 
 /* Medias queries carrito */
-
+/*
 @media (min-width: 450px) {
-
-    /*HEADER*/
 
     .main-header-carrito {
         background-color: #292E33;
@@ -821,6 +819,7 @@ h1::after{
         font-size: 12px;
         height: 140px;
     }
+    
     .search-v .input-buscar{
         font-size: 10px;
         right: 1000px;
@@ -839,10 +838,8 @@ h1::after{
     div.burger-menu {
         display:none;
     }
-    
-
 }
-
+*/
 @media (min-width: 768px){ 
 
     .search-v .input-buscar{
