@@ -839,7 +839,8 @@ h1::after{
         display:none;
     }
 }
-*/
+
+
 @media (min-width: 768px){ 
 
     .search-v .input-buscar{
@@ -881,7 +882,7 @@ h1::after{
     }
 
 }
-    
+*/
     /*MAIN*/
 
     .cart-bottom .confirm-cart p:hover {
@@ -894,7 +895,7 @@ h1::after{
         text-align: center;
         font-size: 15px ;
     }
-}
+
 
 
 
