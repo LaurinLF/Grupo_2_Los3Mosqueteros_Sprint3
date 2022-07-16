@@ -47,7 +47,6 @@ header{
     justify-content: space-around;
    
 }
-
 .logo{
     width: 25%;
 }
@@ -115,7 +114,6 @@ footer{
 }
 
 footer section{
-    justify-content: space-around;
     text-align: center;
     font-size: 12px;
 }
@@ -137,14 +135,12 @@ main{
     align-items: center;
     font-size: 12px;
     justify-content: space-around;
-
 }
 
 .main-conteiner{
     width: 100%;
     display: flex;
 }
-
 .img-product{
     width: 100%;
     align-self:  center;    
