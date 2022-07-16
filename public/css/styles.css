@@ -31,7 +31,7 @@ body{
 }
 
 /* HEADER*/
-@media only screen and (min-width:320px) and (max-width:768px){
+
 header{ 
     background-color: #292E33;
     padding: 0 5px;
@@ -44,15 +44,18 @@ header{
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
    
 }
+
 .logo{
     width: 25%;
 }
 
 .links-user{
-    width: 50%;
+    width: fit-content;
+    text-align: left;
+    padding-right: 30px;
 }
 
 .links-user a{
@@ -116,8 +119,11 @@ footer{
 footer section{
     text-align: center;
     font-size: 12px;
+    font-weight: 100;
 }
-
+footer section h5, span{
+    font-weight: 100;
+}
 .icons-v{
     display: flex;
     justify-content: space-between;
@@ -138,7 +144,7 @@ main{
 }
 
 .main-conteiner{
-    width: 100%;
+    width: 99%;
     display: flex;
 }
 .img-product{
@@ -147,12 +153,77 @@ main{
 }
 .inf-product{
     text-align: center;
+    width: 100%;
     font-size: 11px;
     justify-content: space-around;
-}
-
 
 }
+.button-carrito{
+    background-color: #535C66;
+    font-size: 12px;
+    font-family: orbitron;
+    border-radius: 5px;
+    padding: 5px 5px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    transition: all 0.4s
+}
+
+.button:hover{
+    background-color: #292E33;
+    color:#E04B3C;
+}
+.benefits{
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    align-content: space-around;
+    padding: 10px
+}
+
+.benefits div span{
+    font-weight: bold;
+}
+.benefits div i{
+    font-size: 1em;
+    margin-right: 4px
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+/*HEADER*/
+.logo{
+    width: 15%;
+}
+
+/*MAIN*/
+    .inf-product{
+        font-size: 14px
+    }
+    .benefits{
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 20px;
+        font-size: 14px
+        
+    }
+    .benefits article{
+        justify-content: space-around;
+    }
+/* FOOTER */
+    footer{
+        flex-direction: row;
+        Justify-content: center;
+        justify-content: space-around;
+        padding: 30px;
+    }
+}
+
 
 
 
