@@ -14,7 +14,7 @@ app.get("/detalle",(req,res) => res.sendFile(path.join(viewsPath,"./productDetai
 app.get('/register',(req,res) => res.sendFile(path.join(viewsPath,"./register.html")))
 app.get('/login',(req,res) => res.sendFile(path.join(viewsPath,"./login.html")))
 app.get('/productCart',(req,res) => res.sendFile(path.join(viewsPath,"./productCart.html")))
-
+app.get('/header',(req,res) => res.sendFile(path.join(viewsPath,"./header.html")))
 
 app.listen(port, () => {
     console.log("Servidor corriendo en el puerto " + port);

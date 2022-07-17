@@ -1029,7 +1029,8 @@ h2::after{
     margin-bottom: 2px;
     margin-top: 4px;
     border: none;
-    font-family: 'Purista', sans-serif
+    font-family: 'Purista', sans-serif;
+    color: #fff
 }
 .control:focus{
     padding:0.3rem;
