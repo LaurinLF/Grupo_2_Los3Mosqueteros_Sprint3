@@ -17,46 +17,35 @@
 </head>
 </head>
 <body>
-    <header class = "main-header-carrito">
-        <div class="top-header" >
-            <a href="/"><img class="logo" src = "/images/logo-b.svg" alt ="logo de marca" ></a>
-             <nav class="links-user">
-                 <ul>
-                     <li><a href = "/register">Crear cuenta |</a></li> 
-                     <li><a href = "/login">Iniciar sesión</a></li>
+    <header>
+        <div class="top-header">
+             <div class="left-header">
+                 <figure class="logo">
+                     <img class="logo" src = "/images/logo-b.svg" alt ="logo de marca" a href="/" ></a> 
+                 </figure>
+             </div>
+         
+             <div class="right-header">
+                     <div class="links-user">
+                         <a href = "/register">Crear cuenta |</a>
+                         <a href = "/login">Iniciar sesión</a>
+                     </div>           
+                     <form class='form' action="#" method="GET">
+                         <input type="text" id="search" class="form-control" placeholder="Buscar">
+                         <button type="submit" class="submit"><i class="fa fa-search"></i> </button>
+                     </form>
+             </div>
+         </div>    
+         <div class="navbar">
+             <nav>
+                 <ul class ="links-page">
+                     <li><a class ="orange" href = "/">HOME </a></li>
+                     <li><a href = "/">PRODUCTOS </a></li>
+                     <li><a href = "/">OFERTAS</a></li>
                  </ul>
              </nav>
-            </div>
-            <nav class="bottom-header" >
-                    <ul class = "links-v">
-                        <li><a class ="naranja-v" href = "/">HOME </a></li>
-                        <li><a href = "/">PRODUCTOS </a></li>
-                        <li><a href = "/">OFERTAS</a></li>
-                    </ul>
-                    <div class = "search-v">
-                        <div class="form" action="#" method="GET">
-                            <div class="input">Buscar
-                                <div class="submit"><i class="fa fa-search"></i></div>
-                            </div>
-                        </div>
-                    </div>
-            </nav>    
-                       <!-- </div>
-                    <div class="burger-menu">
-                        <nav class="navigation">
-                            <label class="burger-menu" for="burger"><label for="burger"> ☰ </label>
-                            <input type="checkbox" class="burger-check" id="burger">
-                            <ul class="burger-options">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="#">Productos</a></li>
-                                <li><a href="#">Ofertas</a></li>
-                                <li><a href="/register">Crear Cuenta</a></li>
-                                <li><a href="/login">Inicia Sesión</a></li>
-                                <li><a href="/productCart">Carrito<i class="fa-solid fa-cart-shopping"></i></a></li>
-                            </ul>
-                        </nav>
-                    </div> -->
-            </header>
+         </div>    
+     </header>
         <main class="main-carrito">
             <section class="efecto-principal">
                 <h1 class="lines-effect">CARRITO</h1>
@@ -108,31 +97,61 @@
             </div>
         </div>
         </section>
-        </main>
-        <footer class ="footer-detail">
+         <section class="follow">
+            <h3 class="lines-effect">¡SEGUÍNOS!</h3>
+        </section>
+        <section>
+            <div class="follow-icons">
+                <a href="https://www.instagram.com" target="_blank"><!-- img src="/images/logo-ig.jpg" alt="Instagram"--><i class="fab fa-instagram" id="logo-ig"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><!-- img src="/images/logo-face.jpg" alt="Facebook"--><i class="fab fa-facebook" id="logo-fb"></i></a>
+                <a href="https://web.whatsapp.com" target="_blank"><!--img src="/images/logo-wsp.jpg" alt="Whatsapp"--><i class="fab fa-whatsapp" id="logo-wsp"></i></a>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h4 class="moreinfo">CONOCE MÁS</h4>
+        </section>
+        <section class= "benefits">
             <div>
-                <section>
-                    <h2>Información</h2>
-                    <h3>Preguntas Frecuentes</h3>
-                    <h3>Quienes Somos</h3>
-                </section>
-                <br>
+                <i class="fas fa-truck"></i><span>NO TE MUEVAS DE CASA</span>
+                <p>Hacemos envíos a todo el país</p>
+            </div>
+            <br>
+            <div>
+                <i class="fas fa-credit-card"></i><span>PAGÁ COMO QUIERAS</span>
+                <p>Aceptamos crédito, débito o efectivo</p>
+            </div>
+            <br>
+            <div>
+                <i class="far fa-handshake"></i><span>CALIDAD ASEGURADA</span>
+                <p>Usamos materiales de primera calidad</p>
+            </div>
+        </section>
+    
+        </main>
+        <footer>
             <section>
-                <h2>Medios de Pago</h2>
-                <div class="icons-v">
-                    <div><i class="far fa-money-bill-alt"></i></div>
-                    <div><i class="fab fa-cc-visa"></i></div>
-                    <div><i class="fab fa-cc-amex"></i></div>
-                    <div><i class="fab fa-cc-mastercard"></i></div>
-                </div>
-                </section>
-                <br>
-            <section class ="contac-v">
-                <h2>Contactanos</h2>
-                    <div><i class="fas fa-phone-alt"><span>1111111111</span></i></div>
-                    <div><i class="fas fa-envelope"></i><span>los3mosqueteros@gmail.com</span></i></div>
+                <h4>Información</h4>
+                <h5>Preguntas Frecuentes</h5>
+                <h5>Quienes Somos</h5>
             </section>
-        </div>
-        </footer>
+            <br>
+        <section class ="paymethods">
+            <h4>Medios de Pago</h4>
+            <div class="icons-v">
+                <div><i class="far fa-money-bill-alt"></i></div>
+                <div><i class="fab fa-cc-visa"></i></div>
+                <div><i class="fab fa-cc-amex"></i></div>
+                <div><i class="fab fa-cc-mastercard"></i></div>
+            </div>
+            </section>
+            <br>
+        <section class ="contact-v">
+            <h4>Contactanos</h4>
+                <div><i class="fas fa-phone-alt"><span>1111111111</span></i></div>
+                <div><i class="fas fa-envelope"></i><span>los3mosqueteros@gmail.com</span></i></div>
+        </section>
+    
+    </footer>
     </body>
     </html>

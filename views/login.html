@@ -14,31 +14,37 @@
     <title>Inicio sesión</title>
 </head>
 <body>
-    <header class = "main-header">
-        <div class="top-header" >
-            <a href="/"><img class="logo" src = "/images/logo-b.svg" alt ="logo de marca"></a>
-             <nav class="links-user">
-                 <ul>
-                     <li><a href = "/register">Crear cuenta |</a></li> 
-                     <li><a href = "/login">Iniciar sesión</a></li>
+    <header>
+        <div class="top-header">
+             <div class="left-header">
+                 <figure class="logo">
+                     <img class="logo" src = "/images/logo-b.svg" alt ="logo de marca" a href="/" ></a> 
+                 </figure>
+             </div>
+         
+             <div class="right-header">
+                     <div class="links-user">
+                         <a href = "/register">Crear cuenta |</a>
+                         <a href = "/login">Iniciar sesión</a>
+                     </div>           
+                     <form class='form' action="#" method="GET">
+                         <input type="text" id="search" class="form-control" placeholder="Buscar">
+                         <button type="submit" class="submit"><i class="fa fa-search"></i> </button>
+                     </form>
+             </div>
+         </div>    
+         <div class="navbar">
+             <nav>
+                 <ul class ="links-page">
+                     <li><a class ="orange" href = "/">HOME </a></li>
+                     <li><a href = "/">PRODUCTOS </a></li>
+                     <li><a href = "/">OFERTAS</a></li>
                  </ul>
              </nav>
-            </div>
-            <nav class="bottom-header" >
-                    <ul class = "links-v">
-                        <li><a class ="naranja-v" href = "/">HOME </a></li>
-                        <li><a href = "/">PRODUCTOS </a></li>
-                        <li><a href = "/">OFERTAS</a></li>
-                    </ul>
-                    <div class = "search-v">
-                        <div class="form" action="#" method="GET">
-                            <div class="input">Buscar
-                                <div class="submit"><i class="fa fa-search"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </header>
+         </div>
+        
+     </header>
+ 
     <main class="main-login-register">
         <section class="efecto-principal">
             <h2 class="lines-effect">INICIAR SESIÓN</h2>
@@ -88,45 +94,49 @@
             </div>
         </section>
         <hr>
-        <section class="comentario">
-            <article class="envio">
-                <i class="fas fa-truck"><span>NO TE MUEVAS DE CASA</span></i>
-                <p>Hacemos envíos a todo el país</p>
-            </article>
-            <article class="pago">
-                <i class="fas fa-credit-card"><span>PAGÁ COMO QUIERAS</span></i>
-                <p>Aceptamos crédito, débito o efectivo</p>
-            </article>
-            <article class="calidad">
-                <i class="far fa-handshake"><span>CALIDAD ASEGURADA</span></i>
-                <p>Usamos materiales de primera claidad</p>
-            </article>
-        </section>
+         <section>
+                    <h4 class="moreinfo">CONOCE MÁS</h4>
+                </section>
+                <section class= "benefits">
+                    <div>
+                        <i class="fas fa-truck"></i><span>NO TE MUEVAS DE CASA</span>
+                        <p>Hacemos envíos a todo el país</p>
+                    </div>
+                    <br>
+                    <div>
+                        <i class="fas fa-credit-card"></i><span>PAGÁ COMO QUIERAS</span>
+                        <p>Aceptamos crédito, débito o efectivo</p>
+                    </div>
+                    <br>
+                    <div>
+                        <i class="far fa-handshake"></i><span>CALIDAD ASEGURADA</span>
+                        <p>Usamos materiales de primera calidad</p>
+                    </div>
+                </section>
     </main>   
-    <footer class ="footer-detail">
-        <div>
-            <section>
-                <h2>Información</h2>
-                <h3>Preguntas Frecuentes</h3>
-                <h3>Quienes Somos</h3>
-            </section>
-            <br>
+    <footer>
         <section>
-            <h2>Medios de Pago</h2>
-            <div class="icons-v">
-                <div><i class="far fa-money-bill-alt"></i></div>
-                <div><i class="fab fa-cc-visa"></i></div>
-                <div><i class="fab fa-cc-amex"></i></div>
-                <div><i class="fab fa-cc-mastercard"></i></div>
-            </div>
-            </section>
-            <br>
-        <section class ="contac-v">
-            <h2>Contactanos</h2>
-                <div><i class="fas fa-phone-alt"><span>1111111111</span></i></div>
-                <div><i class="fas fa-envelope"></i><span>los3mosqueteros@gmail.com</span></i></div>
+            <h4>Información</h4>
+            <h5>Preguntas Frecuentes</h5>
+            <h5>Quienes Somos</h5>
         </section>
-    </div>
-    </footer>
+        <br>
+    <section class ="paymethods">
+        <h4>Medios de Pago</h4>
+        <div class="icons-v">
+            <div><i class="far fa-money-bill-alt"></i></div>
+            <div><i class="fab fa-cc-visa"></i></div>
+            <div><i class="fab fa-cc-amex"></i></div>
+            <div><i class="fab fa-cc-mastercard"></i></div>
+        </div>
+        </section>
+        <br>
+    <section class ="contact-v">
+        <h4>Contactanos</h4>
+            <div><i class="fas fa-phone-alt"><span>1111111111</span></i></div>
+            <div><i class="fas fa-envelope"></i><span>los3mosqueteros@gmail.com</span></i></div>
+    </section>
+
+</footer>
 </body>
 </html>

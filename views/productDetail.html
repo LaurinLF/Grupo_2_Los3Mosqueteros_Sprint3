@@ -15,32 +15,37 @@
 </head>
 <body>
     <header>
-        <div class ="top-header">
-            <img class="logo" src = "/images/logo-b.svg" alt ="logo de marca" a href="/" ></a>  
-             <div class="links-user">
-                     <a href = "/register">Crear cuenta |</a>
-                     <a href = "/login">Iniciar sesión</a>
-             </div>
+       <div class="top-header">
+            <div class="left-header">
+                <figure class="logo">
+                    <img class="logo" src = "/images/logo-b.svg" alt ="logo de marca" a href="/" ></a> 
+                </figure>
             </div>
-            <div class = "bottom-header">
-                <nav>
-                    <ul class ="links-page">
-                        <li><a class ="orange" href = "/">HOME </a></li>
-                        <li><a href = "/">PRODUCTOS </a></li>
-                        <li><a href = "/">OFERTAS</a></li>
-                    </ul>
-                </nav>
-                <div class = "search-v">
-                    <div class="form" action="#" method="GET">
-                        <div class="input">Buscar
-                            <div class="submit"><i class="fa fa-search"></i></div>
-                        </div>
-                    </div>
-                </div>
+        
+            <div class="right-header">
+                    <div class="links-user">
+                        <a href = "/register">Crear cuenta |</a>
+                        <a href = "/login">Iniciar sesión</a>
+                    </div>           
+                    <form class='form' action="#" method="GET">
+                        <input type="text" id="search" class="form-control" placeholder="Buscar">
+                        <button type="submit" class="submit"><i class="fa fa-search"></i> </button>
+                    </form>
             </div>
-            </header>
-    <main>
-            <h4>Detalle del Producto</h4>
+        </div>    
+        <div class="navbar">
+            <nav>
+                <ul class ="links-page">
+                    <li><a class ="orange" href = "/">HOME </a></li>
+                    <li><a href = "/">PRODUCTOS </a></li>
+                    <li><a href = "/">OFERTAS</a></li>
+                </ul>
+            </nav>
+        </div>
+       
+    </header>
+    <main class ="main-detail">
+            <h4>DETALLE DEL PRODUCTO</h4>
         </section>
         <div class="main.conteiner">
                     <img class="img-product" src ="/images/escritorio.jpg" alt="Escritorio">
@@ -56,16 +61,31 @@
                             <p>74cm de altura - 60 cm de ancho - 120cm de largo.</p>
                         </h4>
                         <br>
-                        <a href="/productCart"><form action = "productCart.html" method = "POST"></a> 
-                            <p>
-                                <button class = "button-carrito" type = "submit">Agregar al carrito</button>
-                            </p>
+                        <br>
+                        <br>
+                        <br>
+                        <p>
+                         <a href="/productCart"><form action = "productCart.html" method = "POST">
+                            <button class = "button-carrito" type = "submit">Agregar al carrito</button>
+                        </a> 
+                        </p>
                         </form>
                         <br>
                     </div>
                 </div>
+                <section class="follow">
+                    <h3 class="lines-effect">¡SEGUÍNOS!</h3>
+                </section>
                 <section>
-                    <h4>CONOCE MÁS</h4>
+                    <div class="follow-icons">
+                        <a href="https://www.instagram.com" target="_blank"><!-- img src="/images/logo-ig.jpg" alt="Instagram"--><i class="fab fa-instagram" id="logo-ig"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><!-- img src="/images/logo-face.jpg" alt="Facebook"--><i class="fab fa-facebook" id="logo-fb"></i></a>
+                        <a href="https://web.whatsapp.com" target="_blank"><!--img src="/images/logo-wsp.jpg" alt="Whatsapp"--><i class="fab fa-whatsapp" id="logo-wsp"></i></a>
+                    </div>
+                </section>
+                <hr>
+                <section>
+                    <h4 class="moreinfo">CONOCE MÁS</h4>
                 </section>
                 <section class= "benefits">
                     <div>
@@ -83,16 +103,15 @@
                         <p>Usamos materiales de primera calidad</p>
                     </div>
                 </section>
-            
         </main>
-    <footer>
+    <footer class = "footer-detail">
             <section>
                 <h4>Información</h4>
                 <h5>Preguntas Frecuentes</h5>
                 <h5>Quienes Somos</h5>
             </section>
             <br>
-        <section>
+        <section class ="paymethods">
             <h4>Medios de Pago</h4>
             <div class="icons-v">
                 <div><i class="far fa-money-bill-alt"></i></div>
@@ -107,7 +126,6 @@
                 <div><i class="fas fa-phone-alt"><span>1111111111</span></i></div>
                 <div><i class="fas fa-envelope"></i><span>los3mosqueteros@gmail.com</span></i></div>
         </section>
-    
     </footer>
 </body>
 </html>

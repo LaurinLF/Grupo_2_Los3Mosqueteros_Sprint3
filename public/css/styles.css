@@ -1,3 +1,7 @@
+html,body{
+    height: 100vh;
+}
+
 h1,h2,h3,h4,h5,h6{
     font-family: 'Orbitron', sans-serif;
 }
@@ -10,7 +14,12 @@ p{
     margin: 0;
     box-sizing: border-box;
     font-family: orbitron;
-    
+}
+
+main, 
+.main-carrito,
+.main-login-register{
+    min-height: 80vh;
 }
 /*
 :root{
@@ -27,37 +36,28 @@ body{
     margin: auto;
     font-size: 12px;
     width: 100vw;
-    height: 100vh;
+    min-height: 100%;
 }
 
-/* HEADER*/
-
-header{ 
+header {
     background-color: #292E33;
-    padding: 0 5px;
-    color: #FFFFFF;
-    font-size: 9px;
-    width: 100vw;
-}
-/*TOP HEADER*/
-.top-header{
-    display: flex;
-    align-items: center;
     width: 100%;
-    justify-content: space-between;
-   
+    font-size: 12px;
+    height: 130px;
 }
-
-.logo{
-    width: 25%;
+.top-header{
+    display: flex
+}
+.left-header {
+    width: fit-content;
+}
+.left-header img.logo{
+    width: 100px;
 }
 
 .links-user{
-    width: fit-content;
-    text-align: left;
-    padding-right: 30px;
+    text-align: right;
 }
-
 .links-user a{
     text-decoration: none;
     color: #FFFFFF;
@@ -68,17 +68,7 @@ header{
     text-decoration: underline;
 }
 
-/*BOTTOM-HEADER*/
-.bottom-header{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-around;
-}
-
 .links-page{
-    display:flex;
-    width: 25%;
     list-style: none;
 }
 
@@ -90,35 +80,88 @@ header{
     color: #FFFFFF;
 
 }
-.search-v{
-    width: 25%;
+
+.right-header{
+    width: 100%;
+    text-align:right;
+    padding: 20px;
     display: flex;
-    
-}
-.form{
-    width: 15%;
-    
-}
-.input{
-    width: 15%;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul li{
+    padding: 0px 5px
+}
+
+.right-header form{
+    display: flex;
+    width: 40%;
+    max-width: 280px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:stretch;
+    padding-left: 10px;
+    padding:10px 0px
+}
+
+.right-header form input{
+    font-size: 12px;
+    width: 100%;
+    background-color: #535C66;
+    padding:0.2rem;
+    border-radius: 2px 0px 0px 2px;
+    margin-bottom: 2px;
+    margin-top: 4px;
+    border: none;
+    font-family: 'Purista', sans-serif;
+    color: #fff;
+}
+.right-header form i{
+    font-size: 12px;
+}
+
+.right-header form button{
+    background-color: #535C66;
+    padding:0.2rem;
+    border-radius: 0px 2px 2px 0px;
+    margin-bottom: 2px;
+    margin-top: 4px;
+    border: none;
+    font-family: 'Purista', sans-serif;
+    color: #fff;
+    text-align: right;
+    
+
+}
+header .navbar{
+    padding-bottom: 15px;
+    width:fit-content;
+    margin: auto
+}
 
 /* FOOTER */
 footer{
-    background-color: #292E33;
-    padding: 0 5px;
-    color: #FFFFFF;
+    padding: 40px;
     width: 100%;
+    background-color: #292E33;
+    color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    text-align: center;
+    align-content: space-around;
+    bottom: 0;
+    
 }
 
 footer section{
-    text-align: center;
     font-size: 12px;
+    text-align: center;
     font-weight: 100;
 }
 footer section h5, span{
@@ -132,19 +175,20 @@ footer section h5, span{
 .contact-v span{
     margin-left: 4px
 }
+
 /*MAIN CONTENT*/
-main{
-    width: 100%;
-    padding: 0 5px;
-    display: flex;
+.main-detail{
     flex-direction: column;
+    width: 100%;
+    padding: 10px 25px;
+    display: flex;
     align-items: center;
     font-size: 12px;
     justify-content: space-around;
 }
 
 .main-conteiner{
-    width: 99%;
+    width: 100%;
     display: flex;
 }
 .img-product{
@@ -152,15 +196,15 @@ main{
     align-self:  center;    
 }
 .inf-product{
-    text-align: center;
     width: 100%;
+    text-align: center;
     font-size: 11px;
     justify-content: space-around;
 
 }
 .button-carrito{
-    background-color: #535C66;
     font-size: 12px;
+    background-color: #535C66;
     font-family: orbitron;
     border-radius: 5px;
     padding: 5px 5px;
@@ -173,6 +217,13 @@ main{
 .button:hover{
     background-color: #292E33;
     color:#E04B3C;
+}
+
+.moreinfo{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 .benefits{
     font-size: 11px;
@@ -194,35 +245,69 @@ main{
 
 }
 
-@media only screen and (min-width:768px) and (max-width:1024px){
-/*HEADER*/
-.logo{
-    width: 15%;
-}
-
-/*MAIN*/
+/*TABLET*/
+@media (min-width:768px){
+    /*MAIN*/
     .inf-product{
         font-size: 14px
     }
+
+    .moreinfo{
+        font-size: 14px;
+    }
+
     .benefits{
+        font-size: 14px;
         flex-direction: row;
         justify-content: center;
         justify-content: space-around;
-        padding: 20px;
-        font-size: 14px
-        
+        padding: 15px 10px;
     }
+
     .benefits article{
         justify-content: space-around;
     }
-/* FOOTER */
+
+    /* FOOTER */
     footer{
         flex-direction: row;
         Justify-content: center;
         justify-content: space-around;
-        padding: 30px;
+    
     }
+    footer section{
+        font-size: 14px;      
+    }
+
 }
+/*DESKTOP*/
+@media  (min-width:1024px){
+    .main-conteiner{
+        flex-direction: row;
+    }
+    
+    .img-product{
+        width: 50%;
+    }
+    .inf-product{
+        width: 50%;
+        float: right;
+        padding: 60px 10px;
+        font-size: 18px;
+    }
+    .button-carrito{
+        font-size: 16px;
+    }
+
+    .moreinfo{
+        font-size: 18px;
+    }
+    .benefits{
+        font-size: 16px;
+    }
+    footer section{
+        font-size: 16px;      
+    }
 
 
 
@@ -232,6 +317,10 @@ main{
 
 
 
+
+
+
+}
 
 
 
