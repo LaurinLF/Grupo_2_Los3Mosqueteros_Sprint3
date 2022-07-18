@@ -613,7 +613,7 @@ h1::after{
     margin-left: 3px;
 }
 
-.cart {
+.cart{
     width: 95vw;
     max-width: 900px;
     margin: auto;
@@ -627,6 +627,7 @@ h1::after{
     overflow-x: auto;
 }
 
+
 ::-webkit-scrollbar {
     height: 10px;
     background: lightgrey;
@@ -637,6 +638,7 @@ h1::after{
     background: linear-gradient(to right, #2c2c2c, rgb(75,75,75));
     border-radius: 10px;
 }
+
 
 .cart-table {
     width: 100%;
@@ -740,83 +742,7 @@ h1::after{
 }
 
 
-
-/* Medias queries carrito */
-/*
-@media (min-width: 450px) {
-
-    .main-header-carrito {
-        background-color: #292E33;
-        color:#FFFFFF;
-        font-family: 'Orbitron', sans-serif;
-        font-size: 12px;
-        height: 140px;
-    }
-    
-    .search-v .input-buscar{
-        font-size: 10px;
-        right: 1000px;
-        bottom: 35px;
-        border-radius: 5px;
-        padding: 5px 10px;
-    }
-    .search-v .input-buscar i{
-        margin-right: 20px;
-    }
-    .search-v {
-        width:50%;
-        text-align: right;
-    }
-
-    div.burger-menu {
-        display:none;
-    }
-}
-
-
-@media (min-width: 768px){ 
-
-    .search-v .input-buscar{
-        font-size: 10px;
-        left: 650px;
-        bottom: 35px;
-        border-radius: 5px;
-        padding: 5px 10px;
-    }
-
-    .form {
-        width:auto;
-        position: absolute;
-    }
-
-    .search-v .input-buscar i{
-        margin-right: 20px;
-    }
-    div.burger-menu {
-        display:none;
-    }
-    
-
-@media (min-width: 1024px) {
-    
-    .search-v .input-buscar{
-        font-size: 10px;
-        left: 850px;
-        bottom: 45px;
-        border-radius: 5px;
-        padding: 5px 10px;
-    }
-    .search-v .input-buscar i{
-        margin-left: 50px;
-    }
-
-    .conteiner-main{
-    flex-direction: row;
-    }
-
-}
-*/
-    /*MAIN*/
+ /*MAIN*/
 
     .cart-bottom .confirm-cart p:hover {
             background-color: #292E33;
