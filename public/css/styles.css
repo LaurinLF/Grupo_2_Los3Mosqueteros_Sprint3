@@ -16,11 +16,11 @@ p{
     font-family: orbitron;
 }
 
-main, 
+/* main, 
 .main-carrito,
 .main-login-register{
     min-height: 80vh;
-}
+} */
 /*
 :root{
     --Negro: #000000;
@@ -166,11 +166,12 @@ footer section{
 }
 footer section h5, span{
     font-weight: 100;
+    margin-left: 5px;
 }
 .icons-v{
     display: flex;
-    justify-content: space-between;
-    margin-top: 2px
+    justify-content: space-around;
+    margin-top: 2px;
 }
 .contact-v span{
     margin-left: 4px
@@ -261,7 +262,7 @@ footer section h5, span{
         flex-direction: row;
         justify-content: center;
         justify-content: space-around;
-        padding: 15px 10px;
+        padding: 25px 10px;
     }
 
     .benefits article{
@@ -277,6 +278,7 @@ footer section h5, span{
     }
     footer section{
         font-size: 14px;      
+        width: 30%;
     }
 
 }
@@ -882,15 +884,6 @@ div.main-article .add-cart p {
     font-family: Orbitron; 
 }
 
-div.main-article .add-cart p {
-    -webkit-touch-callout: none; 
-    -webkit-user-select: none;   
-    -khtml-user-select: none;    
-    -moz-user-select: none;      
-    -ms-user-select: none;       
-    user-select: none;
-}
-
 div.main-article .price-and-discount {
     display: flex; 
     flex-wrap: wrap;
@@ -916,6 +909,7 @@ h4.description {
 }
 
 a.add-cart {
+    text-decoration: none;
     width: 50%;
     display: block;
     text-align: center;
@@ -944,6 +938,14 @@ a.add-cart:hover {
 
 p.discount {
     color: #E04B3C;
+}
+
+section.comentario {
+    text-align: center;
+}
+
+section.benefits div {
+    padding: 5px 0px 20px;
 }
 
 
@@ -1051,9 +1053,6 @@ p.discount {
 
 
 
-
-
-
 /*fran*/
 .main-login-register{
     background-image: url("/images/fondo-geom.jpg");
@@ -1066,7 +1065,7 @@ h2{
 }
 .efecto-principal{
     margin-bottom: 10px;
-    padding-top:20px;
+    padding-top:40px;
     text-align: center
 }
 .lines-effect{
@@ -1096,6 +1095,7 @@ h2::after{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 40px 0px 40px;
 }
 .login-register-form div{
     display: flex;
@@ -1206,6 +1206,7 @@ h3::after{
     width: 50%;
     justify-content: space-around;
     margin: auto;
+    padding: 10px 0px 10px;
 }
 .follow-icons a{
     text-decoration: none;
@@ -1238,6 +1239,7 @@ h3::after{
     color: rgb(73, 203, 73);
     font-size: 3rem;
 }
+
 hr{
     width: 95vw;
     margin: auto;
