@@ -1,6 +1,8 @@
 html,body{
     height: 100vh;
+    overflow-x: hidden;
 }
+
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Orbitron', sans-serif;
@@ -43,7 +45,7 @@ header {
     background-color: #292E33;
     width: 100%;
     font-size: 12px;
-    height: 130px;
+
 }
 .top-header{
     display: flex
@@ -221,13 +223,14 @@ footer section h5, span{
 }
 
 .moreinfo{
-    font-size: 12px;
+    font-size:16px;
+    font-weight: 500;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 .benefits{
-    font-size: 11px;
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -267,6 +270,13 @@ footer section h5, span{
 
     .benefits article{
         justify-content: space-around;
+    }
+
+    header{
+        font-size: 14px
+    }
+    .left-header img.logo{
+        width: 125px;
     }
 
     /* FOOTER */
@@ -312,16 +322,6 @@ footer section h5, span{
     }
 
 
-
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -329,12 +329,66 @@ footer section h5, span{
 
 
 
+.title{
+    padding-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:90%;
+    margin: auto;
+    margin-bottom: 10px
+    
+}
 
 
+.title:before {
+    margin-right: 20px;
+}
+.title:after{
+    margin-left: 20px;
+}
+.title:after, .title:before {
+    flex-grow: 1;
+    height: 2.3px;
+    content: '\a0';
+    background-color: black;
+    position: relative;
+    top: 0.5em;
+}
 
+.main-detail .follow{
+    width: 100vw
+}
 
+.main-detail .title{
+    padding-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:90%;
+    margin: auto;
+    margin-bottom: 10px
+}
+.main-detail .title:before {
+    margin-right: 20px;
+}
+.main-detail .title:after{
+    margin-left: 20px;
+}
+.main-detail .title:after, .title:before {
+    flex-grow: 1;
+    height: 2.3px;
+    content: '\a0';
+    background-color: black;
+    position: relative;
+    top: 0.5em;
+}
 
-
+.main-detail .follow-icons{
+    width: 50vw
+}
 
 
 
@@ -999,7 +1053,7 @@ h2{
     position: relative;
     justify-content: space-around;
 }
-h2::after, h2::before{
+.efecto-principal h2::after,.efecto-principal h2::before{
     content:'';
     position:absolute;
     width: 25vw;
@@ -1007,10 +1061,10 @@ h2::after, h2::before{
     background-color: black;
     top: 0.6rem
 }
-h2::before{
+.efecto-principal h2::before{
     left: -29vw
 }
-h2::after{
+.efecto-principal h2::after{
     right: -29vw
 }
 
@@ -1096,9 +1150,11 @@ h2::after{
 #remember{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end
+    justify-content: flex-end;
 }
-
+#remember input{
+    margin-left: 5px
+}
 .follow{
     margin-bottom: 10px;
     padding-top:20px;
@@ -1108,7 +1164,7 @@ h2::after{
     font-size:16px;
     font-weight: 500;
 }
-.lines-effect{
+/*.lines-effect{
     display: inline-block;
     position: relative;
     justify-content: space-around;
@@ -1126,7 +1182,7 @@ h3::before{
 }
 h3::after{
     right: -34vw
-}
+}*/
 .follow-icons{
     display: flex;
     width: 50%;
@@ -1167,7 +1223,7 @@ h3::after{
 }
 
 hr{
-    width: 95vw;
+    width: 90%;
     margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
