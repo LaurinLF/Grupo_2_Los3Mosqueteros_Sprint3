@@ -21,7 +21,7 @@ const products = [{
     nombre: "Mesa Ratona" ,
     precio: "$13.500",
     descripcion: "Mesa ratona estilo industrial, realizada con hierro y madera de pino",
-    image: "mesa-ratona.jpg",
+    image: "mesa-ratona.png",
     Medidas: "121cm de largo - 50cm de ancho x 47cm de alto.",
     Descuento: "5",
 },
