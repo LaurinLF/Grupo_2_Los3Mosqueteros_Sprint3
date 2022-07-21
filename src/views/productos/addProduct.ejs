@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/207d3f57810bef8d49e2f1b5f1722fb2?family=Purista" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href=".vscode">
+    <title>Crear</title>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+             <div class="left-header">
+                <figure class="logo">
+                    <a href="/"><img class="logo" src = "/images/logo-b.svg" alt ="logo de marca" a href="/" ></a> 
+                </figure>
+             </div>
+         
+             <div class="right-header">
+                     <div class="links-user">
+                         <a href = "/register">Crear cuenta |</a>
+                         <a href = "/login">Iniciar sesión</a>
+                     </div>           
+                     <form class='form' action="#" method="GET">
+                         <input type="text" id="search" class="form-control" placeholder="Buscar">
+                         <button type="submit" class="submit"><i class="fa fa-search"></i> </button>
+                     </form>
+             </div>
+         </div>    
+         <div class="navbar">
+             <nav>
+                 <ul class ="links-page">
+                     <li><a class ="orange" href = "/">HOME </a></li>
+                     <li><a href = "/">PRODUCTOS </a></li>
+                     <li><a href = "/">OFERTAS</a></li>
+                 </ul>
+             </nav>
+         </div>
+    </header>
+   
+   
+    <main class="main-login-register">
+        
+            <h2 class="title">CREAR PRODUCTO</h2>
+           <!-- Nombre del producto (​name​) 
+            ●Descripción (​description​) 
+            ●Imagen (​image​) 
+            ●Categoría (​category​) 
+            ●Colores (o cualquier otro campo similar como: tamaños, talles, etc) 
+            ●Precio (​price​)-->
+            <form class="login-register-form" action="#" method="post">
+                <div>
+                    <label for="name">Nombre del Producto</label>
+                    <input class='control' type="text" id="name" name="name" placeholder="Mesa Ratona">
+                </div>
+                <div>
+                    <label for="description">Descripción</label>
+                    <textarea class='control' id="description" name="description" placeholder="Comentario del producto" >
+                </div>
+                <div>
+                    <label for="telephone">Teléfono</label>
+                    <input class='control' type="text" id="telephone" name="visitor_telephone" placeholder="3510000000">
+                </div>
+                <div>
+                    <label for="password">Contraseña</label>
+                    <input class='control' type="password" id="password" name="visitor_password" placeholder="Contraseña" required>
+                </div>
+                <div>
+                    <label for="checkpassword">Confirmar contraseña</label>
+                    <input class='control' type="password" id="password" name="visitor_password" placeholder="Confirmar contraseña" required>
+                </div>
+                <div class="login-register-btn">
+                    <input class="button" type="submit" value="CREAR">
+                    <p>¿Ya tenés cuenta? <a href="/login">Iniciá sesión!</a></p>
+                </div>
+            </form>   
+        </section>
+        
+    </main>   
+   
+   
+    <footer>
+        <section>
+            <h4>Información</h4>
+            <h5>Preguntas Frecuentes</h5>
+            <h5>Quienes Somos</h5>
+        </section>
+        <br>
+    <section class ="paymethods">
+        <h4>Medios de Pago</h4>
+        <div class="icons-v">
+            <div><i class="far fa-money-bill-alt"></i></div>
+            <div><i class="fab fa-cc-visa"></i></div>
+            <div><i class="fab fa-cc-amex"></i></div>
+            <div><i class="fab fa-cc-mastercard"></i></div>
+        </div>
+        </section>
+        <br>
+    <section class ="contact-v">
+        <h4>Contactanos</h4>
+            <div><i class="fas fa-phone-alt"><span>1111111111</span></i></div>
+            <div><i class="fas fa-envelope"></i><span>los3mosqueteros@gmail.com</span></i></div>
+    </section>
+
+</footer>
+</body>
+</html>
