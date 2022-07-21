@@ -16,9 +16,9 @@ app.use("/" ,mainRouter)
 const userRouter = require("./routes/userRouter")
 app.use("/users", userRouter)
 
-/*const productRouter = require("./routes/productRouter")
+const productRouter = require("./routes/productRouter")
 app.use("/products", productRouter)
-*/
+
 
 
 app.listen(port, () => {
