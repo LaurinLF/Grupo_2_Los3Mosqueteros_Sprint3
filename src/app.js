@@ -13,12 +13,12 @@ app.set('view engine', 'ejs');
 const mainRouter = require("./routes/mainRouter")
 app.use("/" ,mainRouter)
 
-/*const userRouter = require("./routes/userRouter")
+const userRouter = require("./routes/userRouter")
 app.use("/users", userRouter)
 
 const productRouter = require("./routes/productRouter")
 app.use("/products", productRouter)
-*/
+
 
 
 app.listen(port, () => {

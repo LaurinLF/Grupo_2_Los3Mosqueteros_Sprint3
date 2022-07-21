@@ -1,49 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-    <link href="db.onlinewebfonts.com/c/207d3f57810bef8d49e2f1b5f1722fb2?family=Purista" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href=".vscode">
-    <title>Home</title>
-</head>
+    <head>
+        <%- include("../partials/head.ejs") %>
+        <title>Home</title>
+    </head>
 <body>
-    <header>
-        <div class="top-header">
-             <div class="left-header">
-                <figure class="logo">
-                    <a href="/"><img class="logo" src = "/images/logo-b.svg" alt ="logo de marca" a href="/" ></a> 
-                </figure>
-             </div>
-         
-             <div class="right-header">
-                     <div class="links-user">
-                         <a href = "/register">Crear cuenta |</a>
-                         <a href = "/login">Iniciar sesión</a>
-                     </div>           
-                     <form class='form' action="#" method="GET">
-                         <input type="text" id="search" class="form-control" placeholder="Buscar">
-                         <button type="submit" class="submit"><i class="fa fa-search"></i> </button>
-                     </form>
-             </div>
-         </div>    
-         <div class="navbar">
-             <nav>
-                 <ul class ="links-page">
-                     <li><a class ="orange" href = "/">HOME </a></li>
-                     <li><a href = "/">PRODUCTOS </a></li>
-                     <li><a href = "/">OFERTAS</a></li>
-                 </ul>
-             </nav>
-         </div>
-    </header>
+
+    <%- include("../partials/header.ejs") %>
+    
     <main class="main-login-register">
         <section class="banner">
             <div>
@@ -55,7 +19,26 @@
         </section>
             <section class="last-visit">
                 <div class="products">
-                    <a class="link-detail" href="/detalle">
+                    <% saleProducts.forEach ( product => { %>
+                        <a class="link-detail" href="/products/detalle"> <!-- Faltaria agregar la ruta dinamica con el :id y tambien agregarselo al route del detalle, 
+                        copienselo al grupo que ya andaba re avanzado-->
+                            <article>
+                                <figure>
+                                    <img src="/images/<%= product.image %>" class="product_img" width=250px alt="escritorio">
+                                </figure>
+                                <div class="main-article">
+                                    <h4 class="description"> <%= product.nombre %> </h4>
+                                    <div class="price-and-discount">
+                                        <p class="price"> <%= product.precio %> </p>
+                                        <p class="discount"> <%= product.Descuento %>% OFF</p>
+                                    </div>                            
+                                    <a class="add-cart" href="/products/productCart" role="button"><p>Agregar al carrito</p></a>
+                                </div>
+                            </article>
+                        </a>
+                    <% } ) %>
+
+                    <!-- <a class="link-detail" href="/products/detail">
                         <article>
                             <figure>
                                 <img src="/images/escritorio.jpg" class="product_img" width=250px alt="escritorio">
@@ -114,64 +97,13 @@
                                 <a class="add-cart" href="/productCart" role="button"><p>Agregar al carrito</p></a>
                             </div>                
                         </article> 
-                    </a>
+                    </a> -->
                 </div>
             </section>
-            <section class="follow">
-                <h3 class="title">¡SEGUÍNOS!</h3>
-            </section>
-            <section>
-                <div class="follow-icons">
-                    <a href="https://www.instagram.com" target="_blank"><!-- img src="/images/logo-ig.jpg" alt="Instagram"--><i class="fab fa-instagram" id="logo-ig"></i></a>
-                    <a href="https://www.facebook.com" target="_blank"><!-- img src="/images/logo-face.jpg" alt="Facebook"--><i class="fab fa-facebook" id="logo-fb"></i></a>
-                    <a href="https://web.whatsapp.com" target="_blank"><!--img src="/images/logo-wsp.jpg" alt="Whatsapp"--><i class="fab fa-whatsapp" id="logo-wsp"></i></a>
-                </div>
-            </section>
-            <hr>
-            <section>
-                <h4 class="moreinfo">CONOCE MÁS</h4>
-            </section>
-            <section class= "benefits">
-                <div>
-                    <i class="fas fa-truck"></i><span>NO TE MUEVAS DE CASA</span>
-                    <p>Hacemos envíos a todo el país</p>
-                </div>
-                <br>
-                <div>
-                    <i class="fas fa-credit-card"></i><span>PAGÁ COMO QUIERAS</span>
-                    <p>Aceptamos crédito, débito o efectivo</p>
-                </div>
-                <br>
-                <div>
-                    <i class="far fa-handshake"></i><span>CALIDAD ASEGURADA</span>
-                    <p>Usamos materiales de primera calidad</p>
-                </div>
-            </section>
+            <%- include("../partials/seguinos.ejs") %>
+            <%- include("../partials/conoceMas.ejs") %>
         
     </main>
-    <footer>
-        <section>
-            <h4>Información</h4>
-            <h5>Preguntas Frecuentes</h5>
-            <h5>Quienes Somos</h5>
-        </section>
-        <br>
-    <section class ="paymethods">
-        <h4>Medios de Pago</h4>
-        <div class="icons-v">
-            <div><i class="far fa-money-bill-alt"></i></div>
-            <div><i class="fab fa-cc-visa"></i></div>
-            <div><i class="fab fa-cc-amex"></i></div>
-            <div><i class="fab fa-cc-mastercard"></i></div>
-        </div>
-        </section>
-        <br>
-    <section class ="contact-v">
-        <h4>Contactanos</h4>
-            <div><i class="fas fa-phone-alt"><span>1111111111</span></i></div>
-            <div><i class="fas fa-envelope"></i><span>los3mosqueteros@gmail.com</span></i></div>
-    </section>
-
-</footer>
+    <%- include("../partials/footer.ejs") %>
 </body>
 </html>
