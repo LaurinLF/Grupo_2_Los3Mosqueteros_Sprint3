@@ -322,6 +322,11 @@ footer section h5, span{
     footer section{
         font-size: 16px;      
     }
+    .icons-v{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2px;
+    }
 
 
 }
