@@ -10,8 +10,8 @@ const products = [{
 {
     id: 2,
     name: "Mesa Cruz Guayubirá" ,
-    precio: "$130.000",
-    descripcion: "Mesa de comedor de hierro y madera estilo industrial",
+    price: "$130.000",
+    description: "Mesa de comedor de hierro y madera estilo industrial",
     image: "mesa-x.jpg",
     measures: "1.20mts de largo - 70cm de ancho - 75cm de alto.",
     discount: "15",
@@ -19,8 +19,8 @@ const products = [{
 {
     id: 3,
     name: "Mesa Ratona" ,
-    precio: "$13.500",
-    descripcion: "Mesa ratona estilo industrial, realizada con hierro y madera de pino",
+    price: "$13.500",
+    description: "Mesa ratona estilo industrial, realizada con hierro y madera de pino",
     image: "mesa-ratona.png",
     measures: "121cm de largo - 50cm de ancho x 47cm de alto.",
     discount: "5",
@@ -28,8 +28,8 @@ const products = [{
 {
     id: 4,
     name: "Espejo Blackfe" ,
-    precio: "$21.900",
-    descripcion: "Espejo con marco y recuadros de hierro estilo industrial",
+    price: "$21.900",
+    description: "Espejo con marco y recuadros de hierro estilo industrial",
     image: "espejo.jpg",
     measures: "44cm de largo - 10cm de profundidad",
     discount: "10",
