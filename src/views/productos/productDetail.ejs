@@ -10,18 +10,19 @@
             <h2 class="title">DETALLE DEL PRODUCTO</h2>
         </section>
         <section class="main.conteiner">
-                    <img class="img-product" src ="/images/escritorio.jpg" alt="Escritorio">
+                    <img class="img-product" src ="/images/<%= products.image%>" alt="imagen producto">
                     <div class="inf-product">
-                        <h4> <%= products.nombre %> </h4>
-                        <h4><%= products.precio %></h4>
-                        <h4><%= products.descuento %></h4>
+                        <h4> <%= products.name %> </h4>
+                        <h4><%= products.price %></h4>
+                        <h4><%= products.discount %></h4>
                         <br>
                         <h4>Descripción:
-                            <p class="description-v"> <%= products.descripcion %></p>
+                            <p class="description-v"> <%= products.description %></p>
                             <br>
                         </h4>
                         <h4>Medidas:
-                            <p><%= products.medidas %></p>
+                            <p><%= products.measures %></p>
+
                             <!--<h4>Escritorio X </h4>
                         <h4>$40.000</h4>
                         <br>

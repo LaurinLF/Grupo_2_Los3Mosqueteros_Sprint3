@@ -18,9 +18,10 @@ const productController = {
 
     detalle: (req,res) =>{
         const id = Number(req.params.id)
-        const productsDB = products.find(producto => producto.id === id)
+        const product = products.find(product => product.id === id)
         res.render("productos/productDetail",
         {
+            product,
             products
         }
         )

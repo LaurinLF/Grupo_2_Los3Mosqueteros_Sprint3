@@ -7,7 +7,7 @@ router.get("/productos", productController.listadoProductos)
 
 router.get("/productCart", productController.carrito)
 
-router.get("/detalle", productController.detalle)
+router.get("/productDetail/:id", productController.detalle)
 
 router.get("/crear", productController.crear)
 
