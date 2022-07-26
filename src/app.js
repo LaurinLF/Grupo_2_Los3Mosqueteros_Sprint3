@@ -17,7 +17,7 @@ const userRouter = require("./routes/userRouter")
 app.use("/users", userRouter)
 
 const productRouter = require("./routes/productRouter")
-app.use("/productos", productRouter)
+app.use("/products", productRouter)
 
 
 
