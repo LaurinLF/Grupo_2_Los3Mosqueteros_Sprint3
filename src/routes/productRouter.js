@@ -9,8 +9,8 @@ router.get("/productCart", productController.carrito)
 
 router.get("/detalle/:id", productController.detalle)
 
-router.get("/crear", productController.crear)
+router.get("/create", productController.crear)
 
-router.get("/editar", productController.editar)
+router.get("/edit/:id", productController.editar)
 
 module.exports = router
